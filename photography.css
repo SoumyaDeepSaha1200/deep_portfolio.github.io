@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* General navbar styles */
+.nav {
+    border-bottom: 1px solid white;
+    background-color: #000000;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav-items a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fefefe !important;
+    margin-left: 1rem;
+    transition: all 0.3s;
+}
+
+.nav-items a:hover {
+    color: #40e903 !important;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 39px;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    transition: all 0.3s;
+    font-family: "Seymour One", sans-serif;
+    font-size: 1rem;
+    color: #000000 !important;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    color: #7b00ff !important;
+}
+
+#chatbot {
+    width: 90%;
+    background-color: #000 !important;
+    color: #4cff15 !important;
+    font-weight: bold;
+}
+
+#chatbot:hover {
+    background-color: #030187 !important;
+    color: #fff315 !important;
+}
+
+@media (max-width: 1000px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #000;
+        z-index: 999;
+        display: none; /* Hide nav-items by default */
+    }
+
+    .nav-items.active {
+        display: flex; /* Show nav-items when active class is present */
+    }
+
+    .sidebar {
+        right: 0; /* Show sidebar when active */
+    }
+}
+
+
+
+
+
+/* <!-- photography part --> */
+.imagesphoto img {
+    height: 20vh;
+}
+
+#gallerybut {
+    background-color: black !important;
+    color: aliceblue !important;
+}
+
+#gallerybut:hover {
+    background-color: rgb(15, 99, 244) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+#galleryphoto {
+    font-family: "Seymour One", sans-serif;
+    font-size: 3.5rem;
+}
+
+@media (max-width: 488px) {
+    #galleryphoto {
+        font-size: 1.8rem;
+    }
+}
+
+/* <!-- end photography --> */

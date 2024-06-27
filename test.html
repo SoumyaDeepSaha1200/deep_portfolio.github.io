@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Blog Page</title>
+    <!-- Include the Facebook SDK -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="YOUR_NONCE"></script>
+    <style>
+        /* Optional: Add your custom CSS styles here */
+        .fb-plugin {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Facebook Like Button -->
+    <div class="fb-plugin">
+        <div class="fb-like" data-href="YOUR_PAGE_URL" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+    </div>
+
+    <!-- Facebook Share Button -->
+    <div class="fb-plugin">
+        <div class="fb-share-button" data-href="YOUR_PAGE_URL" data-layout="button_count"></div>
+    </div>
+
+    <!-- Facebook Comment Plugin -->
+    <div class="fb-plugin">
+        <div class="fb-comments" data-href="YOUR_PAGE_URL" data-width="" data-numposts="5"></div>
+    </div>
+
+    <!-- Facebook Like Box (optional) -->
+    <div class="fb-plugin">
+        <div class="fb-like-box" data-href="YOUR_PAGE_URL" data-width="" data-show-faces="true" data-stream="false" data-header="false"></div>
+    </div>
+
+    <!-- Initialize Facebook SDK (Optional, if not already initialized) -->
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : 'YOUR_APP_ID',
+                xfbml      : true,
+                version    : 'v12.0'
+            });
+        };
+
+        (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+</body>
+</html>

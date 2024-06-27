@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Soumya Deep Saha - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./apple-touch-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Seymour+One&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Dancing+Script:wght@400..700&family=Seymour+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Seymour+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Disable right-click
+            document.body.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+
+            // Disable Ctrl+U
+            document.body.addEventListener('keydown', function (e) {
+                if (e.ctrlKey && e.key === 'u') {
+                    e.preventDefault();
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!-- chatbot -->
+    <div class="chatbot-container">
+        <a href="chatbot.html"><i class='bx bxs-conversation' id="chatbot-icon"></i></a>
+    </div>
+    <!-- end chatbot -->
+
+
+
+
+
+
+    <!--nav bar strs  -->
+    <div class="nav">
+        <div class="navbar">
+            <div class="logo f-left">
+                <img src="./apple-touch-icon.png" alt="">
+            </div>
+            <ul class="nav-items">
+                <a href="index.html" class="fw-bold text-decoration-none">
+                    <li>Home</li>
+                </a>
+                <a href="#about" class="fw-bold text-decoration-none">
+                    <li>About</li>
+                </a>
+                <a href="#service" class="fw-bold text-decoration-none">
+                    <li>Services</li>
+                </a>
+                <a href="#skills" class="fw-bold text-decoration-none">
+                    <li>Skills</li>
+                </a>
+                <a href="#projectpy" class="fw-bold text-decoration-none">
+                    <li>Projects</li>
+                </a>
+                <a href="#achivment" class="fw-bold text-decoration-none">
+                    <li>Achievements</li>
+                </a>
+                <a href="#blogs" class="fw-bold text-decoration-none" data-bs-toggle="modal"
+                    data-bs-target="#blogsModal">
+                    <li>Blogs</li>
+                </a>
+                <a href="#photography" class="fw-bold text-decoration-none">
+                    <li>Photography</li>
+                </a>
+                <a href="#contact" class="fw-bold text-decoration-none">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <div class="menu-toggle f-left" id="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <h1 class="mt-5 p-auto fs-1 fw-bold text-center">Menu</h1>
+        <ul class="nav-itemss">
+            <a href="index.html" class="fw-bold text-decoration-none">
+                <li>Home</li>
+            </a>
+            <a href="#about" class="fw-bold text-decoration-none">
+                <li>About</li>
+            </a>
+            <a href="#service" class="fw-bold text-decoration-none">
+                <li>Services</li>
+            </a>
+            <a href="#skills" class="fw-bold text-decoration-none">
+                <li>Skills</li>
+            </a>
+            <a href="#projectpy" class="fw-bold text-decoration-none">
+                <li>Projects</li>
+            </a>
+            <a href="#achivment" class="fw-bold text-decoration-none">
+                <li>Achievements</li>
+            </a>
+            <a href="#blogs" class="fw-bold text-decoration-none" data-bs-toggle="modal" data-bs-target="#blogsModal">
+                <li>Blogs</li>
+            </a>
+            <a href="#photography" class="fw-bold text-decoration-none">
+                <li>Photography</li>
+            </a>
+            <a href="#contact" class="fw-bold text-decoration-none ">
+                <li>Contact</li>
+            </a>
+
+
+            <a href="chatbot.html">
+                <div class="btn btn-warning" id="chatbot"><i class='bx bxs-conversation' id=""></i> Chat With Us</div>
+            </a>
+        </ul>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="blogsModal" tabindex="-1" aria-labelledby="blogsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="blogsModalLabel">My Blogs</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Blog cards -->
+                    <div class="blog-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Cheating Detection System</h5>
+                                <p class="card-text">Discover innovative methods and technologies used to detect and
+                                    prevent cheating in various environments, ensuring fairness and integrity.</p>
+                                <a href="blog.html" class="btn btn-primary" id="buttonblogss" style="border: none;">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">My Web Development journey</h5>
+                                <p class="card-text">Learn about J.E.R.V.I.S, an advanced AI system designed to assist
+                                    and enhance various aspects of daily tasks through smart automation.</p>
+                                <!-- it added leter here a blog -->
+                                <a href="workingunderway.html" class="btn btn-primary" style="border: none;"
+                                    id="buttonblogss">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">BCA Degree</h5>
+                                <p class="card-text">Explore the benefits and career opportunities that come with
+                                    obtaining a Bachelor of Computer Applications (BCA) degree in today's tech-driven
+                                    world.</p>
+                                <!-- it added leter here a blog -->
+                                <a href="workingunderway.html" class="btn btn-primary" style="border: none;"
+                                    id="buttonblogss">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more blog cards as needed -->
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="navbar.js"></script>
+    <!-- end here -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- banner start -->
+
+    <div class="banner">
+        <div class="balls-container"></div> <!-- Container for the animated balls -->
+        <!-- Your other content here -->
+        <div class="banrap">
+            <h1 class="fw-bold"> Welcome to my Portfolio</h1>
+            <h3 class="fw-bold">Hi I'm Soumya Deep Saha</h3>
+            <p class="text-primary">Welcome! I'm Soumya Deep Saha, an adept web and Android developer skilled in Java,
+                C,
+                and Python. Notable projects include "Cheating Detention" and "Jervis." I excel in creating impactful
+                solutions, showcased in my first client project, iCube Computer Sales and Services. Let's innovate
+                together!</p>
+            <div class="icons">
+                <i class='bx bxl-github' id="github"></i>
+                <i class='bx bxl-linkedin-square' id="link"></i>
+                <i class='bx bxl-facebook-circle' id="facebook"></i>
+                <i class='bx bxl-instagram-alt' id="instragram"></i>
+                <i class='bx bxl-google' id="google"></i>
+                <i class='bx bxl-whatsapp' id="whatsapp"></i>
+                <i class="fab fa-hackerrank" id="hacker"></i> <!-- HackerRank Icon -->
+            </div>
+            <a href="#contact" class="text-decoration-none">
+                <div class="btn btn-warning fw-bold" id="bannerbut"><i class='bx bxs-phone-call'></i> Contact</div>
+            </a>
+            <a href="./Soumya Deep_Saha_BCA_GNIT.pdf" class="fw-bold text-decoration-none text-danger" download>
+                <div class="btn btn-warning fw-bold" id="bannerbut"><i class='bx bx-cloud-download'></i> Download Resume
+                </div>
+            </a>
+            <a href="#" class="fw-bold text-decoration-none text-danger" data-bs-toggle="modal"
+                data-bs-target="#feedbackModal">
+                <div class="btn btn-warning fw-bold" id="bannerbut"><i class='bx bxs-user-voice'></i> Feedback</div>
+            </a>
+
+        </div>
+    </div>
+    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="feedbackModalLabel">Submit Feedback</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="feedbackForm" enctype="multipart/form-data" method="post" action="feedback.php">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedback" class="form-label">Feedback</label>
+                            <textarea class="form-control" id="feedback" name="feedback" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Upload Image</label>
+                            <input class="form-control" type="file" id="image" name="image" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="banner.js"></script>
+    <!-- banner end -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- about starts -->
+    <div class="about">
+        <h3 class="fw-bold" id="about">About Me</h3>
+        <div class="container mt-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="aboutimg">
+                        <img src="./20221226153909_IMG_4834.jpg" alt="About Image">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="abouttext">
+                        <h2 class="fw-bold fs-3">Know more about me</h2>
+                        <p>Welcome! I am Soumya Deep Saha, an adept web and Android developer skilled in Java, C, and
+                            Python. With a passion for creating impactful solutions, I have worked on notable projects
+                            such as "Cheating Detention" and "Jervis." My expertise shines in my first client-ordered
+                            project, iCube Computer Sales and Services. Let's innovate together and bring your ideas to
+                            life with cutting-edge technology and creative problem-solving.
+                        </p>
+                        <a href="#skills" class="text-decoration-none">
+                            <div class="btn btn-danger fw-bold" id="aboutbtn">Skills</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="about.js"></script>
+    <!-- about end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- services -->
+    <div class="container mt-5">
+        <h3 class="fw-bold" id="service">My Services</h3>
+        <div class="row mt-5">
+
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="webdevelopment.png" class="card-img-top" alt="Service Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Full Stack Web Development with PHP</h5>
+                        <p class="card-text">I offer full stack web development services, utilizing the latest
+                            technologies to build robust and scalable web applications. From frontend to backend, I
+                            ensure seamless integration and user-friendly interfaces.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="button3">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="androiddevelopment.jpg" class="card-img-top" alt="Service Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Android App Development</h5>
+                        <p class="card-text">My Android app development service includes designing, developing, and
+                            maintaining high-quality mobile applications. I focus on delivering smooth and responsive
+                            apps that provide an exceptional user experience.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="button3">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="uxui.jpg" class="card-img-top" alt="Service Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">UX/UI Designer</h5>
+                        <p class="card-text">As a UX/UI designer, I create intuitive and engaging user interfaces that
+                            enhance the overall user experience. My designs are both aesthetically pleasing and
+                            functional, ensuring that users have a seamless interaction with the product.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="button3">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="pythonmachine.png" class="card-img-top" alt="Service Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Machine Learning Engineer:</h5>
+                        <p class="card-text">I provide Python and machine learning services to help you harness the
+                            power of data. From building predictive models to automating processes, I leverage advanced
+                            algorithms to deliver intelligent solutions.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="button3">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="advancejava.png" class="card-img-top" alt="Service Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Java Software Engineer:</h5>
+                        <p class="card-text">My advanced Java development services include building robust web services
+                            and applications. I specialize in creating efficient, scalable, and secure Java applications
+                            that meet your business needs.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="button3">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="excel.jpg" class="card-img-top" alt="Service Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Data Analyst</h5>
+                        <p class="card-text">I offer advanced Excel services to help you manage and analyze data
+                            effectively. From complex formulas to data visualization, I provide solutions that enhance
+                            your data handling capabilities and business insights.</p>
+                        <!-- <a href="#" class="btn btn-primary" id="button3">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card service-card">
+                    <img src="projectleader.jpg" class="card-img-top" alt="Service Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Project Leader</h5>
+                        <p class="card-leader">I lead projects and ensure they are completed on time and within budget.
+                        </p> <!-- Added paragraph for Project Leader -->
+                        <!-- <a href="#" class="btn btn-primary" id="button3">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+            <!-- More added later -->
+        </div>
+    </div>
+    <script src="service.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- outline -->
+    <hr>
+    <!-- outline -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Skills starts -->
+    <div class="container mt-5">
+        <h3 class="fw-bold" id="skills">My Skills</h3>
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card skills-card">
+                    <img src="s3.png" class="card-img-top" alt="Skill Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Full Stack Web Development with PHP</h5>
+                        <ul class="card-text">
+                            <li>Completed 18 Months Web Development course <span id="certificateLink">
+                                    <a href="#" class="text-decoration-none fw-bold text-success" data-bs-toggle="modal"
+                                        data-bs-target="#certificateModal">Click Here</a>
+                                </span> to check certificate</li>
+                            <li>Complete 1 Month Internships with Codsoft, Tech Octanet, Cognorise, Cognifyze and Code
+                                Alpha <span><a href="" class="text-decoration-none fw-bold text-success"
+                                        data-bs-toggle="modal" data-bs-target="#certificateModal2">Click
+                                        Here</a></span> to check certificate</li>
+                            <li>Built robust and scalable web applications.</li>
+                            <li>Utilized latest technologies for seamless integration.</li>
+                            <li>Developed user-friendly interfaces for enhanced UX.</li>
+                        </ul>
+                        <div class="progress mt-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                                role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
+                                aria-valuemax="100">90%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card skills-card">
+                    <img src="s2.png" class="card-img-top" alt="Skill Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Android App Development with Java</h5>
+                        <ul class="card-text">
+                            <li>Completed 18 Months Android App Development course <span><a href=""
+                                        class="text-decoration-none fw-bold text-info" data-bs-toggle="modal"
+                                        data-bs-target="#certificateModal3">Click Here</a></span> to check
+                                certificate</li>
+                            <li>Designed, developed, and maintained mobile applications.</li>
+                            <li>Focused on delivering smooth and responsive apps.</li>
+                            <li>Provided exceptional user experience.</li>
+                            <li>Implemented security best practices to protect user data.</li>
+                        </ul>
+
+                        <div class="progress mt-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card skills-card">
+                    <img src="s1.png" class="card-img-top" alt="Skill Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">UX/UI Designer</h5>
+                        <ul class="card-text">
+                            <li>Completed 18 Months Android App Development course <span><a href=""
+                                        class="text-decoration-none fw-bold text-warning" data-bs-toggle="modal"
+                                        data-bs-target="#certificateModal4">Click Here</a></span> to check
+                                Designs</li>
+                            <li>Created intuitive and engaging user interfaces.</li>
+                            <li>Enhanced overall user experience.</li>
+                            <li>Designed aesthetically pleasing and functional interfaces.</li>
+                            <li>Conducted user testing to validate design choices.</li>
+                            <li>Implemented feedback loops to iteratively improve designs.</li>
+                        </ul>
+
+                        <div class="progress mt-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0"
+                                aria-valuemax="100">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card skills-card">
+                    <img src="s4.png" class="card-img-top" alt="Skill Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Python with Machine Learning</h5>
+                        <ul class="card-text">
+                            <li>Completed 12 Months Python Course <span><a href=""
+                                        class="text-decoration-none fw-bold text-danger" data-bs-toggle="modal"
+                                        data-bs-target="#certificateModal5">Click Here</a></span> to check
+                                certificate</li>
+                            <li>Complete 6 Month Internships with Euphoria Genx <span><a href=""
+                                        class="text-decoration-none fw-bold text-danger" data-bs-toggle="modal"
+                                        data-bs-target="#certificateModal6">Click Here</a></span> to check
+                                certificate</li>
+                            <li>Built predictive models for data analysis.</li>
+                            <li>Automated processes using advanced algorithms.</li>
+                            <li>Delivered intelligent data-driven solutions.</li>
+                        </ul>
+                        <div class="progress mt-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
+                                aria-valuemax="100">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card skills-card">
+                    <img src="s5.jpeg" class="card-img-top" alt="Skill Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Advanced Java with Web Services</h5>
+                        <ul class="card-text">
+                            <li>Completed 12 Months Java Course <span><a href=""
+                                        class="text-decoration-none fw-bold text-primary" data-bs-toggle="modal"
+                                        data-bs-target="#certificateModal7">Click Here</a></span> to check
+                                certificate</li>
+                            <li>Built robust web services and applications.</li>
+                            <li>Specialized in efficient, scalable, and secure Java applications.</li>
+                            <li>Met various business needs with custom solutions.</li>
+                            <li>Implemented microservices architecture for enhanced scalability.</li>
+                        </ul>
+
+                        <div class="progress mt-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+                                aria-valuemax="100">85%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card skills-card">
+                    <img src="s6.jpeg" class="card-img-top" alt="Skill Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Advanced Excel</h5>
+                        <ul class="card-text">
+                            <li>Managed and analyzed data effectively.</li>
+                            <li>Utilized complex formulas and data visualization.</li>
+                            <li>Enhanced data handling capabilities and business insights.</li>
+                            <li>Developed automated reporting systems for real-time analytics.</li>
+                            <li>Implemented data cleansing techniques to ensure data accuracy.</li>
+                            <!-- <li>Collaborated with stakeholders to define data requirements and KPIs.</li> -->
+                        </ul>
+                        <div class="progress mt-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark"
+                                role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                                aria-valuemax="100">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card skills-card">
+                    <img src="software.jpg" class="card-img-top" alt="Skill Image">
+                    <div class="card-body service-card-body">
+                        <h5 class="card-title">Software Engineering</h5>
+                        <ul class="card-text">
+                            <li>Designed and developed software applications.</li>
+                            <li>Wrote and maintained code using Java, Python, and C.</li>
+                            <li>Collaborated with cross-functional teams to define project requirements.</li>
+                            <li>Utilized version control systems like Git for source code management.</li>
+                            <li>Implemented software testing strategies to ensure code quality.</li>
+                            <li>HackerRank certify Software Enginner <span><a href=""
+                                        class="text-decoration-none fw-bold text-primary" data-bs-toggle="modal"
+                                        data-bs-target="#certificateModal8">Click Here</a></span> to check
+                                certificate</li>
+                        </ul>
+                        <div class="progress mt-2">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0"
+                                aria-valuemax="100">40%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- More added later -->
+        </div>
+    </div>
+
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./c1.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./c2.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="certificateModal2" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./Tech octanet offer letter_page-0001.jpg" class="img-fluid border"
+                        alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./Cognorise offter latter_page-0001.jpg" class="img-fluid border" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./Code Alpha_page-0001.jpg" class="img-fluid border" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./Soumya Deep saha Codsoft offer latter_page-0001.jpg" class="img-fluid border"
+                        alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./Cognifyze_page-0001.jpg" class="img-fluid border" alt="Certificate Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="certificateModal3" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./c1.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./c2.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="modal fade" id="certificateModal4" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./1.png" class="img-fluid" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./2.png" class="img-fluid" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./3.png" class="img-fluid" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./4.png" class="img-fluid" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./s2.png" class="img-fluid" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./s3.png" class="img-fluid" alt="Certificate Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="certificateModal5" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./c30.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="certificateModal6" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./c3.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+                <div class="modal-body">
+                    <img src="./c24.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="certificateModal7" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./c30.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="certificateModal8" tabindex="-1" aria-labelledby="certificateModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./software_engineer certificate_page-0001.jpg" class="img-fluid" alt="Certificate Image">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end skills here -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- outline -->
+    <hr>
+    <!-- outline end -->
+
+
+
+
+
+
+    <!-- Projects starts -->
+    <div class="container mt-5">
+        <h3 class="fw-bold" id="projectpy">My Projects</h3>
+        <div class="row mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="1.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body project-card-body">
+                        <h5 class="card-title fw-bold text-center">Full Stack Web Development Projects</h5>
+                        <p class="card-text">
+                            Completed 18 Months Web Development course <br>
+                            Internships: Codsoft, Tech Octanet, Cognorise, Cognifyze, and Code Alpha <br>
+                            Projects: Gym, Restaurant, Game, Travel, and more <br>
+                            <a href="#" class="btn btn-primary mt-3" id="buttonproject" data-bs-toggle="modal"
+                                data-bs-target="#projectModal">View Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="2.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body project-card-body">
+                        <h5 class="card-title fw-bold text-center">Python Projects</h5>
+                        <p class="card-text">
+                            Completed 18 Months Web Development course <br>
+                            Internships: Codsoft, Tech Octanet, Cognorise, Cognifyze, and Code Alpha <br>
+                        </p>
+                        <a href="#" class="btn btn-primary mt-3" id="buttonproject" data-bs-toggle="modal"
+                            data-bs-target="#projectModal2">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <img src="3.png" class="card-img-top" alt="Project Image">
+                    <div class="card-body project-card-body">
+                        <h5 class="card-title fw-bold text-center">Android App Development Projects</h5>
+                        <p class="card-text">
+                            Completed 18 Months Web Development course <br>
+                            Internships: Codsoft, Tech Octanet, Cognorise, Cognifyze, and Code Alpha <br>
+                        </p>
+                        <a href="#" class="btn btn-primary mt-3" id="buttonproject" data-bs-toggle="modal"
+                            data-bs-target="#projectModal3">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Other project cards -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-center fs-1" style="font-family: Seymour One, sans-serif;"
+                        id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- Card 1 -->
+                            <div class="col">
+                                <a href="https://icubelearning.com/project/DAAD478/website1/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="./first page.png" class="card-img-top" alt="Project Image 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">GYM Website</h5>
+                                            <p class="card-text">With this website I started my web development
+                                                journey...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col">
+                                <a href="https://icubelearning.com/project/DAAD478/website2/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="second page.png" class="card-img-top" alt="Project Image 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Travel to Egypt</h5>
+                                            <p class="card-text">An Egyptian website for travel booking...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col">
+                                <a href="https://icubelearning.com/project/DAAD478/website3/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="third page.png" class="card-img-top" alt="Project Image 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Gaming Website</h5>
+                                            <p class="card-text">A website for buying games, similar to Steam and
+                                                Xbox...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="col">
+                                <a href="https://icubelearning.com/project/DAAD478/website4/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="forth page.png" class="card-img-top" alt="Project Image 4">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Animia Restaurant</h5>
+                                            <p class="card-text">A website for a fictional restaurant...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="col">
+                                <a href="https://icubelearning.com/project/DAAD478/website5/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="fifth page.png" class="card-img-top" alt="Project Image 5">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Online Travel Booking Website</h5>
+                                            <p class="card-text">A website for booking travel packages...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 6 -->
+                            <div class="col">
+                                <a href="https://icubelearning.com/project/DAAD478/website6/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="sixth page.png" class="card-img-top" alt="Project Image 6">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">JavaScript Website</h5>
+                                            <p class="card-text">A project demonstrating JavaScript skills...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 7 -->
+                            <div class="col">
+                                <a href="https://icubelearning.com/project/DAAD478/website7/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="seventh page.png" class="card-img-top" alt="Project Image 7">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Tic-Tac-Toe Game</h5>
+                                            <p class="card-text">A web-based Tic-Tac-Toe game...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 8 -->
+                            <div class="col">
+                                <a href="https://icubelearning.com/project/DAAD478/website8/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="eight page.png" class="card-img-top" alt="Project Image 8">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Hoichoi Clone</h5>
+                                            <p class="card-text">A clone of the Hoichoi streaming service...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 9 -->
+                            <div class="col">
+                                <a href="http://icubelearning.com/project/DAAD478/website9/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="nine page.png" class="card-img-top" alt="Project Image 9">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Photography Website</h5>
+                                            <p class="card-text">A website showcasing photography work...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://google-clone-wheat-gamma.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="google_clone.png" class="card-img-top" alt="Project Image 9">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Google clone</h5>
+                                            <p class="card-text">I make a clone of google</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://spotify-peach-nine.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="spotify.png" class="card-img-top" alt="Project Image 9">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Spotify Clone</h5>
+                                            <p class="card-text">Spotify the music app</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- blank for next line -->
+                            <div class="col">
+
+                            </div>
+                            <!-- blank end -->
+
+
+
+
+
+                            <!-- Extra Card -->
+                            <h1 class="fw-bold text-center fs-5" style="font-family: Seymour One, sans-serif;"
+                                id="clientorder">Client
+                                Ordered Projects</h1>
+                            <div class="col mt-5">
+                                <a href="https://icubelearning.com/ICUBE_SHOP/index.html" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="client project1.png" class="card-img-top" alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Icube Computer Sales & Services</h5>
+                                            <p class="card-text">My first client-ordered website...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col mt-5">
+                                <a href="http://tutorease.in/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="second client oder project.png" class="card-img-top"
+                                            alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Tutorease education website</h5>
+                                            <p class="card-text">Our team project online education system</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <h1 class="fw-bold text-center fs-5" style="font-family: Seymour One, sans-serif;"
+                                id="codsoft">My
+                                Internship Projects with Codsoft</h1>
+                            <div class="col mt-5">
+                                <a href="https://codsoft-task1-level1.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="./codesoft1.png" class="card-img-top" alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Landing Page Task 1</h5>
+                                            <!-- <p class="card-text">My first client-ordered website...</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col mt-5">
+                                <a href="https://codsoft-task2-level1.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="codesoft2.png" class="card-img-top" alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Portfolio Task 2</h5>
+                                            <!-- <p class="card-text">My first client-ordered website...</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col mt-5">
+                                <a href="https://codsoft-task3-level1.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="codsoft task 3 level 1.png" class="card-img-top"
+                                            alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Calculator Task 3</h5>
+                                            <!-- <p class="card-text">My first client-ordered website...</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <!-- blank for next line -->
+                            <div class="col">
+
+                            </div>
+                            <!-- blank end -->
+                            <!-- blank for next line -->
+                            <div class="col">
+
+                            </div>
+                            <!-- blank end -->
+
+
+
+                            <h1 class="fw-bold text-center fs-5" style="font-family: Seymour One, sans-serif;"
+                                id="cognorise">My
+                                Internship Projects with Cognorise</h1>
+                            <div class="col mt-5">
+                                <a href="https://bmi-calculator-task-8.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="codnorise 3.png " class="card-img-top" alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">BMI Calculator</h5>
+                                            <!-- <p class="card-text">My first client-ordered website...</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col mt-5">
+                                <a href="https://currency-converter-task-5.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="codnorise 2.png" class="card-img-top" alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Currency Converter</h5>
+                                            <!-- <p class="card-text">My first client-ordered website...</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col mt-5">
+                                <a href="https://cogno-rise-infotech-task-2-neon.vercel.app/"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="codnorise.png" class="card-img-top" alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">To Do List</h5>
+                                            <!-- <p class="card-text">My first client-ordered website...</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <!-- blank for next line -->
+                            <div class="col">
+
+                            </div>
+                            <!-- blank end -->
+                            <!-- blank for next line -->
+                            <div class="col">
+
+                            </div>
+                            <!-- blank end -->
+
+
+                            <h1 class="fw-bold text-center fs-5" style="font-family: Seymour One, sans-serif;"
+                                id="octanet">My
+                                Internship Projects with Octanet</h1>
+                            <div class="col mt-5">
+                                <a href="https://octanet-june-hazel.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="octanet.png" class="card-img-top" alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Landing Page</h5>
+                                            <!-- <p class="card-text">My first client-ordered website...</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col mt-5">
+                                <a href="https://octanet-june-task2-sigma.vercel.app/" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="ocanet task2.png" class="card-img-top" alt="Client Project Image">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">To-Do-List</h5>
+                                            <!-- <p class="card-text">My first client-ordered website...</p> -->
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- this model for python project -->
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-center fs-1" style="font-family: Seymour One, sans-serif;"
+                        id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- Card 1 -->
+                            <div class="col">
+                                <a href="https://github.com/SoumyaDeepSaha1200/Face-detection"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="./face detetion.png" class="card-img-top" alt="Project Image 1">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Face Detection Project</h5>
+                                            <p class="card-text">With this website I started my web development
+                                                journey...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col">
+                                <a href="https://github.com/SoumyaDeepSaha1200/movie_recommender_system-main"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="movie.jpg" class="card-img-top" alt="Project Image 2">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Movie Recomendation System</h5>
+                                            <p class="card-text">An Egyptian website for travel booking...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 3 -->
+                            <div class="col">
+                                <a href="404.html" class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="pdfmerge.jpeg" class="card-img-top" alt="Project Image 3">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Merge images with PDF</h5>
+                                            <p class="card-text">A website for buying games, similar to Steam and
+                                                Xbox...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 4 -->
+                            <div class="col">
+                                <a href="https://github.com/SoumyaDeepSaha1200/J.E.R.V.I.S"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="jarvis.png" class="card-img-top" alt="Project Image 4">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">J.E.R.V.I.S</h5>
+                                            <p class="card-text">A website for a fictional restaurant...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="col">
+                                <a href="https://github.com/SoumyaDeepSaha1200/J.E.R.V.I.S"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="flappybird.avif" class="card-img-top" alt="Project Image 5">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Flappy Bird Game</h5>
+                                            <p class="card-text">A website for booking travel packages...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="https://github.com/SoumyaDeepSaha1200/Virtual_Painter.git"
+                                    class="text-decoration-none">
+                                    <div class="card h-100">
+                                        <img src="virtualpainter.jpg" class="card-img-top" alt="Project Image 5">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Virtual Painter</h5>
+                                            <p class="card-text">A website for booking travel packages...</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- this model for android app project -->
+    <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold text-center fs-1" style="font-family: Seymour One, sans-serif;"
+                        id="projectModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <!-- Card 1 -->
+                            <div class="col">
+                                <a href="Programming.apk" class="text-decoration-none" download>
+                                    <div class="card h-100">
+                                        <img src="./app 1.jpg" class="card-img-top" alt="Project Image 1"
+                                            style="height: 50vh;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Programming App</h5>
+                                            <p class="card-text">With this website I started my web development
+                                                journey...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Card 2 -->
+                            <div class="col">
+                                <a href="tic-tac-toe.apk" class="text-decoration-none" download>
+                                    <div class="card h-100">
+                                        <img src="./app 2.jpg" class="card-img-top" alt="Project Image 1"
+                                            style="height: 50vh;">
+                                        <div class="card-body">
+                                            <h5 class="card-title fw-bold">Tic Tac Toe</h5>
+                                            <p class="card-text">With this website I started my web development
+                                                journey...
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- starts here -->
+
+
+
+
+
+
+
+
+
+
+    <!-- outline starts -->
+    <hr>
+    <!-- end outline -->
+
+
+
+
+
+
+
+
+    <!-- achivement -->
+    <div class="container-fluid">
+        <h2 class="mt-5 mb-4 text-center" id="achivment">My Achievements</h2>
+        <div class="row justify-content-center">
+            <!-- Achievement Cards -->
+            <!-- in college level -->
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="./CertificateOfCompletion_Career Essentials in Sustainable Tech by Microsoft and LinkedIn_page-0001.jpg"
+                        class="card-img-top achievement-img" alt="Achievement Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center mt-5">Career Essentials in Sustainable Tech by Microsoft
+                            and LinkedIn</h5>
+
+                            <a href="https://www.linkedin.com/learning/certificates/07095439f7cd559f9571cd0ba94fdd0f195a66e89b605939a2a8def92f5ba0a2" class="fw-bold text-decoration-none text-center">Click to verify</a>
+                        <!-- <p class="card-text">I complete 6 months Machine Learning internship with Euphoria Genx</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="./software_engineer certificate_page-0001.jpg" class="card-img-top achievement-img"
+                        alt="Achievement Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Software Engineer HackerRank</h5>
+                        <a href="https://www.hackerrank.com/certificates/077d8f7cf491" class="fw-bold text-decoration-none text-center">Click to verify</a>
+                        <!-- <p class="card-text">I complete 6 months Machine Learning internship with Euphoria Genx</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="./python_basic certificate_page-0001.jpg" class="card-img-top achievement-img"
+                        alt="Achievement Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Basic Python HackerRank</h5>
+                        <a href="https://www.hackerrank.com/certificates/7b6403dbf53c" class="fw-bold text-decoration-none text-center">Click to verify</a>
+                        <!-- <p class="card-text">I complete 6 months Machine Learning internship with Euphoria Genx</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="./c_sharp_basic certificate_page-0001.jpg" class="card-img-top achievement-img"
+                        alt="Achievement Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Solve HackerRank C#</h5>
+                        <a href="https://www.hackerrank.com/certificates/5a45c4c99d32" class="fw-bold text-decoration-none text-center">Click to verify</a>
+                        <!-- <p class="card-text">I complete 6 months Machine Learning internship with Euphoria Genx</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c24.jpg" class="card-img-top achievement-img" alt="Achievement Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Internship on Machine Learning</h5>
+                        <!-- <p class="card-text">I complete 6 months Machine Learning internship with Euphoria Genx</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c25.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Expert Power Point Presentation</h5>
+                        <!-- <p class="card-text">Our team will recive a Best Presentation certificate</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c3.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Minor Project on Machine Learning</h5>
+                        <!-- <p class="card-text">I complete Minor project in Machine Learning with Euphoria Genx</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c20.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Participate in Seminar organized by Techno India
+                            University</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c1.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Diploma on Android App Development</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c13.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">JIS Samman Kabaddi Runner's up</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c26.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Documentation of Final Year Project</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c16.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Konnnagar Science Fair</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end college -->
+            <!-- starts intership on web development -->
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="./Soumya Deep saha Codsoft offer latter_page-0001.jpg"
+                        class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Codsoft internship offer letter</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="./Cognorise offter latter_page-0001.jpg" class="card-img-top achievement-img"
+                        alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Cognorise internship offer letter</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="Cognifyze_page-0001.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Cognifyze internship offer letter</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="Tech octanet offer letter_page-0001.jpg" class="card-img-top achievement-img"
+                        alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Tech Octanet internship offer letter</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="Code Alpha_page-0001.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Code Alpha internship offer letter</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end internship -->
+            <!-- starts others -->
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c21.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Finisher of 10k marathon organized by kolkata police
+                        </h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end -->
+            <!-- photography starts -->
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c4.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">5th position on online photography competition</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c5.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">3rd position on online photography competition</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c6.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Admin choice on online photography competition</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 achievement-card">
+                <div class="card">
+                    <img src="c22.jpg" class="card-img-top achievement-img" alt="Achievement Image">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-center">Participation certificate</h5>
+                        <!-- <p class="card-text">Description of Achievement 2 goes here.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- photography ends -->
+            <!-- Repeat the card structure for all 20 achievements -->
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <img src="" id="modalImage" class="img-fluid" alt="Clicked Achievement Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="achive.js"></script>
+    <script src="achivement.js"></script>
+    <!-- Modal Structure -->
+    <!-- end achivement -->
+
+
+
+
+
+
+
+
+    <!-- outline starts -->
+    <hr>
+    <!-- end outline -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- testtimonial -->
+
+    <!-- testtimonia end -->
+
+
+
+
+    <!-- gallery -->
+    <div class="container" id="photography">
+        <h1 id="galleryphoto">My Photography</h1>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <img src="./IMG_20220923_161848.jpg" class="img-thumbnail" alt="Image 1">
+            <img src="india.jpg" class="img-thumbnail" alt="Image 2">
+            <img src="IMG_8000.jpg" class="img-thumbnail" alt="Image 3">
+            <img src="DSC04825.jpg" class="img-thumbnail" alt="Image 4">
+            <img src="c44f59e14e13465180ae64e09a43d000_131361233_864858207619187_2922198837665688068_n.jpg"
+                class="img-thumbnail" alt="Image 5">
+            <img src="DSC_0513.jpg" class="img-thumbnail" alt="Image 6">
+            <img src="light.jpg" class="img-thumbnail" alt="Image 7">
+            <img src="IMG_5548.jpg" class="img-thumbnail" alt="Image 8">
+            <img src="DSC_0884.jpg" class="img-thumbnail" alt="Image 9">
+        </div>
+        <a href="photography.html">
+            <div id="gallerybut" class="btn btn-warning mt-3 fw-bold">Check More</div>
+        </a>
+    </div>
+
+    <!-- end gallery -->
+
+
+
+
+    <!-- outline starts -->
+    <hr>
+    <!-- end outline -->
+
+
+
+
+
+    <!-- contact -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 id="contact">Let's connect with me</h2>
+                <p>We're here to answer your questions and get you the information you need. Feel free to reach out
+                    to
+                    us using the form below or any of the contact details listed.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <i class="fas fa-phone-alt me-2"></i> 91+ 6291307445
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-envelope me-2"></i> deepadiotic@gmail.com
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-map-marker-alt me-2"></i>700055 Shyamnagar Road, Kolkata, Dum Dum, West
+                        bengal,
+                        India
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 mt-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-bold">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-bold">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="contactbutton">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- contact end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="text-center py-3 border bg-dark text-white fs-5">
+        &copy;
+        <?php echo date("Y"); ?> <a href="index.html" class="fw-bold text-decoration-none text-white fs-5">Soumya
+            Deep
+            Saha</a>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/js/bootstrap.min.js"></script>
+</body>
+
+</html>

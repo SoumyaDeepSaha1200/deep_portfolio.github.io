@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Soumya Deep Saha - Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./apple-touch-icon.png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Disable right-click
+            document.body.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+
+            // Disable Ctrl+U
+            document.body.addEventListener('keydown', function (e) {
+                if (e.ctrlKey && e.key === 'u') {
+                    e.preventDefault();
+                }
+            });
+
+            // GSAP Animations
+            gsap.from(".display-4", { duration: 1.5, y: -50, opacity: 0, ease: "bounce.out" });
+            gsap.from(".lead", { duration: 1.5, y: 50, opacity: 0, delay: 0.5, ease: "power2.out" });
+            gsap.from(".btn-primary", { duration: 1.5, scale: 0, opacity: 0, delay: 1, ease: "elastic.out(1, 0.3)" });
+        });
+    </script>
+    <style>
+        @media screen and (max-width: 500px) {
+    #temp h1{
+        font-size: 2rem;
+    }
+}
+        </style>
+</head>
+
+<body>
+    <div class="container-fluid d-flex align-items-center justify-content-center vh-100">
+        <div class="text-center w-100" id="temp">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Temporarily Unavailable</h1>
+            <h2 class="animate__animated animate__fadeInDown">Sorry for the inconvenience.</h2>
+            <p class="lead animate__animated animate__fadeInUp">The page you are looking for is temporarily unavailable. Please check back later.</p>
+            <a href="index.html" class="btn btn-primary animate__animated animate__fadeInUp fw-bold">Go back to homepage</a>
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+        }
+
+        .container-fluid {
+            background: linear-gradient(135deg, #f8f9fa 25%, #e9ecef 25%, #e9ecef 50%, #f8f9fa 50%, #f8f9fa 75%, #e9ecef 75%, #e9ecef 100%);
+            background-size: 56.57px 56.57px;
+            animation: backgroundScroll 10s linear infinite;
+        }
+
+        @keyframes backgroundScroll {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 56.57px 56.57px;
+            }
+        }
+
+        h1 {
+            color: #343a40;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        .lead {
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0069d9;
+            border-color: #0062cc;
+            transform: scale(1.05);
+        }
+
+        .text-center {
+            width: 100%;
+        }
+
+        /* Additional CSS */
+        .container-fluid::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.5);
+            z-index: 0;
+        }
+
+        .text-center {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .lead {
+            font-family: 'Open Sans', sans-serif;
+            color: #555;
+        }
+
+        .btn-primary {
+            font-size: 1.1rem;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+        /* Target all scrollbars */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Track (the part of the scrollbar that is not the thumb) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color */
+}
+
+    </style>
+</body>
+
+</html>

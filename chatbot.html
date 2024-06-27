@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot.css">
+    <title>Soumya Deep Saha - Portfolio</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Disable right-click
+            document.body.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+
+            // Disable Ctrl+U
+            document.body.addEventListener('keydown', function (e) {
+                if (e.ctrlKey && e.key === 'u') {
+                    e.preventDefault();
+                }
+            });
+        });
+
+    </script>
+ 
+</head>
+
+<body>
+    <div class="chatbot">
+        <div class="chatapp">
+            <div class="chatheader">
+                <h3>Welcome to Deep Portfolio</h3>
+                <p><span class="typing-animation">How can I help you?</span></p>
+            </div>
+            <div class="chatbox" id="chatbox">
+                <p class="right"><strong style="color: #ffe600;">You:</strong> Hi, I have a question.</p>
+                <p class="left"><strong style="color: #ffe600;">Deep Portfolio:</strong> Sure, what's your question?</p>
+                <!-- Previous messages can be added here -->
+            </div>
+            <div class="chatinput">
+                <input type="text" id="userInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chatbot.js"></script>
+</body>
+
+</html>

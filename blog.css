@@ -1,0 +1,284 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eddf4a;
+    text-align: justify;
+}
+/* Target all scrollbars */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Track (the part of the scrollbar that is not the thumb) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color */
+}
+
+/* Header styles */
+header {
+    background-color: #000000 !important;
+    padding: 5px 0;
+}
+
+.navbar-brand {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffc107 !important;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.2s ease-in;
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #42d200 !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #ffc107 !important;
+}
+
+
+
+
+
+
+
+
+/* Main content styles */
+main {
+    padding: 30px 15px;
+}
+h1{
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #000000;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+strong{
+    color: #21a9ed !important;
+}
+p, ul, ol {
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Sections styles */
+/* Image styles */
+/* Image styles */
+img {
+    max-width: 100%;
+    height: 30vh;
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Border for images */
+img.border {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+#csvimage img{
+    height: 90vh;
+}
+pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    position: relative;
+}
+#codeinstall {
+    color: black;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 15px;
+    overflow-x: auto;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 500px) {
+    img {
+        max-width: 100%;
+        width: 100%; /* Ensure images take full width on smaller screens */
+    }
+}
+
+#overview {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Features section styles */
+#features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#features ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+#features ul li:before {
+    content: "\2022";
+    color: #28a745;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Installation section styles */
+#installation-code {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.copy-btn {
+    background-color: #17a2b8;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #138496;
+}
+
+/* Screenshots section styles */
+#screenshots .col-md-4 {
+    margin-bottom: 20px;
+}
+
+#screenshots .img-fluid {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#screenshots .img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ section styles */
+.accordion .card {
+    border: none;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion .card-header {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.accordion .card-header h2 {
+    margin: 0;
+}
+
+.accordion .card-header:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+#faqAccordion .card {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+#faqAccordion .card-header {
+    background-color: #f7f7f7;
+    border: none;
+    padding: 0.75rem 1.25rem;
+}
+#faqAccordion .btn-link {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+#faqAccordion .btn-link:hover {
+    color: #0056b3;
+}
+#faqAccordion .card-body {
+    padding: 1rem 1.25rem;
+}
+#faqAccordion .collapse.show {
+    background-color: #f8f8f8;
+}
+#diagram{
+    height: 25vh;
+}
+i{
+    font-size: 2rem;
+    margin-left: 20px;
+}
+#temimages{
+    height: 25rem;
+}
+/* responsive part */
+@media screen and (max-width: 450px) {
+    #listrefrence a{
+        font-size: 0.8rem;
+    }
+    #acknowledgement{
+        font-size: 2rem;
+    }
+    #csvimage{
+        display: none;
+    }
+    #titletext{
+        font-size: 1.7rem;
+    }
+    #introduc{
+        font-size: 1rem;
+    }
+    #keyfind{
+        font-size: 1.2rem;
+    }
+    #keyfinds2{
+        font-size: 1.2rem;
+    }
+    #keyfind3{
+        font-size: 1.1rem;
+    }
+}

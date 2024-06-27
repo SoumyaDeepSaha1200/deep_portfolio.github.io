@@ -1,0 +1,204 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.chatapp {
+    background-color: #222;
+    border-radius: 20px;
+    width: 30rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.chatheader {
+    text-align: center;
+    font-size: 1.5rem;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.chatheader h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.chatbox {
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.chatbox p {
+    margin: 5px 0;
+    text-align: right;
+    /* Align user messages to the right */
+}
+
+.chatbox p.left {
+    text-align: left;
+    /* Align chatbot responses to the left */
+}
+
+.chatbox p strong {
+    color: #ffbf00;
+    /* Green color for labels */
+}
+
+.chatinput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #666;
+    padding-top: 10px;
+}
+
+.chatinput input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.chatinput button {
+    padding: 8px 15px;
+    border: none;
+    font-weight: bold;
+    background-color: #6b03d4;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chatinput button:hover {
+    background-color: #45a049;
+}
+
+/* Typing Effect Styles */
+.typing-animation {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    border-right: .15em solid white;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    body {
+        font-size: 16px;
+    }
+
+    .chatapp {
+        width: 90%;
+        margin: auto;
+    }
+
+    .chatheader h3 {
+        font-size: 1.2rem;
+    }
+
+    .typing-animation {
+        font-size: 1.2rem;
+    }
+}
+
+/* Styles for chat messages */
+.chatbox {
+    overflow-y: scroll;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.message.right {
+    background-color: #eaf7ff;
+    text-align: right;
+}
+
+.message.left {
+    background-color: #f0f0f0;
+    text-align: left;
+}
+
+/* Typing animation styles */
+.typing-indicator {
+    margin-top: 10px;
+    border-left: 3px solid #ccc;
+    padding-left: 5px;
+    animation: typing 1s infinite;
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+/* Target all scrollbars */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Track (the part of the scrollbar that is not the thumb) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color */
+}

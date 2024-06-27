@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep's Blog</title>
+    <link rel="shortcut icon" href="./apple-touch-icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap">
+    <link rel="stylesheet" href="blog.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Disable right-click
+            document.body.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            });
+
+            // Disable Ctrl+U
+            document.body.addEventListener('keydown', function (e) {
+                if (e.ctrlKey && e.key === 'u') {
+                    e.preventDefault();
+                }
+            });
+        });
+
+    </script>
+    <script>
+        function copyCode() {
+            const code = document.getElementById('installation-code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                alert('Code copied to clipboard!');
+            }).catch(err => {
+                console.error('Error copying text: ', err);
+            });
+        }
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
+    </script>
+    <script>
+        function copyCode() {
+            var copyText = document.getElementById("installation-code").textContent;
+            navigator.clipboard.writeText(copyText).then(function () {
+                alert("Code copied to clipboard!");
+            }, function () {
+                alert("Failed to copy code. Please try again.");
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <header class="bg-dark text-white p-3">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href="blog.html" id="blogtitle">My Blog's</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item fw-bold"><a class="nav-link fw-bold text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item fw-bold"><a class="nav-link fw-bold text-white" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item fw-bold"><a class="nav-link fw-bold text-white"
+                            href="#certificate">Certificate</a></li>
+                    <li class="nav-item fw-bold"><a class="nav-link fw-bold text-white" href="#temimages">Team</a>
+                    </li>
+                    <li class="nav-item fw-bold"><a class="nav-link fw-bold text-white" href="#temimages">Documentation</a>
+                    </li>
+                    <li class="nav-item fw-bold"><a class="nav-link fw-bold text-white" href="#screenshots">Code
+                        </a></li>
+                    <li class="nav-item fw-bold"><a class="nav-link fw-bold text-white" href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <!-- nameing part -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4 text-center" id="titletext">Cheating Detection System</h1>
+            <p class="fs-1 text-dark text-center">Submitted in partial fulfillment of the requirements for the award of
+                the degree of
+                Bachelors in Computer Application
+            </p>
+            <p><strong>Guide:</strong> Dr. Ananjan Maity & Prof. Chiranjib Dutta (Head Of the Department)</p>
+            <p><strong>Members:</strong> Leader Soumya Deep Saha, Ishita Sen, Shreshta Saha and Sutanu Mukherjee</p>
+            <p><strong>Organization:</strong> Gurunanak Institute of Technology</p>
+            <p><strong>University:</strong> Maulana Abul Kalam Azad University of Technology, West Bengal</p>
+            <p><strong>Submitted Date:</strong> May 30, 2024</p>
+            <p><strong>College Location:</strong> 157/F Nilgunj Road. Kolkata – 700 114 West Bengal</p>
+        </section>
+        <!-- end here this part -->
+
+
+        <!-- meet team members end -->
+        <section id="overview" class="mb-5">
+            <div class="modal-body">
+                <!-- Team member cards -->
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="image 1.jpg" alt="Jane Smith" class="img-fluid" id="temimages">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Soumya Deep Saha</h5>
+                                <p class="card-text">
+                                    Soumya is a creative frontend developer with a knack for crafting delightful user
+                                    interfaces. He loves exploring new frameworks and design trends. Jane's expertise
+                                    includes React, Angular.js, SCSS, and responsive design.
+                                </p>
+                                <p class="card-text">
+                                    He is the leader of Team Data Dynamos, overseeing both the Python coding part of the
+                                    Cheating Detection project and the frontend development.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Contact Soumya:
+                                        deepadiotic@gmail.com</small>
+                                </p>
+                                <i class='bx bxl-github' id="github"></i>
+                                <i class='bx bxl-linkedin-square' id="link"></i>
+                                <i class='bx bxl-facebook-circle' id="facebook"></i>
+                                <i class='bx bxl-instagram-alt' id="instragram"></i>
+                                <i class='bx bxl-google' id="google"></i>
+                                <i class='bx bxl-whatsapp' id="whatsapp"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="image 1.jpg" alt="Jane Smith" class="img-fluid" id="temimages">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Soumya Deep Saha</h5>
+                                <p class="card-text">
+                                    Soumya is a creative frontend developer with a knack for crafting delightful user
+                                    interfaces. He loves exploring new frameworks and design trends. Jane's expertise
+                                    includes React, Angular.js, SCSS, and responsive design.
+                                </p>
+                                <p class="card-text">
+                                    He is the leader of Team Data Dynamos, overseeing both the Python coding part of the
+                                    Cheating Detection project and the frontend development.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Contact Soumya:
+                                        deepadiotic@gmail.com</small>
+                                </p>
+                                <i class='bx bxl-github' id="github"></i>
+                                <i class='bx bxl-linkedin-square' id="link"></i>
+                                <i class='bx bxl-facebook-circle' id="facebook"></i>
+                                <i class='bx bxl-instagram-alt' id="instragram"></i>
+                                <i class='bx bxl-google' id="google"></i>
+                                <i class='bx bxl-whatsapp' id="whatsapp"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="image 1.jpg" alt="Jane Smith" class="img-fluid" id="temimages">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Soumya Deep Saha</h5>
+                                <p class="card-text">
+                                    Soumya is a creative frontend developer with a knack for crafting delightful user
+                                    interfaces. He loves exploring new frameworks and design trends. Jane's expertise
+                                    includes React, Angular.js, SCSS, and responsive design.
+                                </p>
+                                <p class="card-text">
+                                    He is the leader of Team Data Dynamos, overseeing both the Python coding part of the
+                                    Cheating Detection project and the frontend development.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Contact Soumya:
+                                        deepadiotic@gmail.com</small>
+                                </p>
+                                <i class='bx bxl-github' id="github"></i>
+                                <i class='bx bxl-linkedin-square' id="link"></i>
+                                <i class='bx bxl-facebook-circle' id="facebook"></i>
+                                <i class='bx bxl-instagram-alt' id="instragram"></i>
+                                <i class='bx bxl-google' id="google"></i>
+                                <i class='bx bxl-whatsapp' id="whatsapp"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="image 1.jpg" alt="Jane Smith" class="img-fluid" id="temimages">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Soumya Deep Saha</h5>
+                                <p class="card-text">
+                                    Soumya is a creative frontend developer with a knack for crafting delightful user
+                                    interfaces. He loves exploring new frameworks and design trends. Jane's expertise
+                                    includes React, Angular.js, SCSS, and responsive design.
+                                </p>
+                                <p class="card-text">
+                                    He is the leader of Team Data Dynamos, overseeing both the Python coding part of the
+                                    Cheating Detection project and the frontend development.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Contact Soumya:
+                                        deepadiotic@gmail.com</small>
+                                </p>
+                                <i class='bx bxl-github' id="github"></i>
+                                <i class='bx bxl-linkedin-square' id="link"></i>
+                                <i class='bx bxl-facebook-circle' id="facebook"></i>
+                                <i class='bx bxl-instagram-alt' id="instragram"></i>
+                                <i class='bx bxl-google' id="google"></i>
+                                <i class='bx bxl-whatsapp' id="whatsapp"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more team member cards as needed -->
+            </div>
+        </section>
+
+        <!-- meet team members end -->
+
+
+        <!-- declaration part -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4">Declaration</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="image1.jpg" class="img-fluid" alt="Additional Image 1">
+                </div>
+            </div>
+        </section>
+        <!-- declaretion part end -->
+
+        <!-- certificate part -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4">Certificate</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="image1.jpg" class="img-fluid" alt="Additional Image 1">
+                </div>
+            </div>
+        </section>
+        <!-- certificate end here -->
+
+
+
+        <!-- aknowledgement starts here -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4" id="acknowledgement">Acknowledgment</h1>
+            <p class="fs-1" style="text-align: justify;">Through this acknowledgement we express our heartfelt gratitude
+                towards
+                all those who have helped us in this project, which has been a learning
+                experience. <br> <br>
+
+                Firstly, we would like to express our special thanks to <b> Professor Swarup Kumar Mitra, Guru Nanak
+                    Institute of Technology and Dr Arun Kumar
+                    Mondal </b>, the Board of Controller, Guru Nanak Institute of Technology for
+                providing us this opportunity. <br> <br>
+
+                Our project was successfully carried out under the guidance of <b> Dr.
+                    Ananjan Maity </b> who has extended his valuable guidance and knowledge
+                sharing to keep us motivated and rooted towards this project. <br> <br>
+
+                We hereby take this opportunity to express our deepest regards to our
+                <b> Department Head Prof. Chiranjib Dutta </b> to embark on this journey. <br><br>
+
+                We would further like to thank all our <b> fellow classmates and friends.</b>
+                Without whom we would not have the right amount of confidence. Courage
+                and dedication to complete the project on time. <br> <br>
+
+                Finally, last but not the least, we are very much thankful to all <b> fellow
+                    members of the project team </b> who have worked hand in hand and
+                showcased excellent work and perfect coordination in finishing the project.
+            </p>
+        </section>
+        <!-- end here acknowledgement -->
+
+
+        <!-- start abstract -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4">Abstract</h1>
+            <p class="fs-1" style="text-align:justify;">The transition to online examinations has introduced significant
+                challenges
+                in ensuring academic integrity. This project develops a comprehensive
+                cheating detection system that integrates sound detection, decibel
+                monitoring, and eye and head movement tracking to maintain the fairness
+                of online assessments. The sound detection component uses advanced
+                algorithms to identify unauthorized conversations and background noises,
+                while decibel monitoring flags any unusual increases in sound levels
+                indicative of potential collusion or external assistance. <br><br>
+                Complementing auditory checks, the system employs computer vision
+                techniques to track eye and head movements. These methods detect
+                anomalies such as frequent looking away from the screen or head turns that
+                suggest the presence of unauthorized materials. This combined approach
+                allows for the identification of suspicious behaviours in real-time,
+                providing immediate alerts and comprehensive post-exam analysis reports. <br><br>
+                Preliminary testing demonstrates the system’s effectiveness, significantly
+                reducing the incidence of undetected cheating. By focusing on specific,
+                quantifiable behaviors, the system enhances detection accuracy while
+                maintaining respect for student privacy. <br><br>
+                In conclusion, the integration of sound detection, decibel monitoring, and
+                eye and head movement tracking provides a robust solution to the evolving
+                challenge of cheating in online exams. This program establishes a new
+                standard for academic integrity, ensuring a secure and fair testing
+                environment for all students.</p>
+        </section>
+        <!-- end here  -->
+
+
+
+        <!-- introduction starts -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4">Introduction</h1>
+            <h3 id="introduc" class="text-center">Introduction to Cheating Detection System</h3>
+            <p style="text-align: justify;">In the contemporary digital era, the integrity of assessments and
+                examinations is paramount. As
+                educational institutions and professional certification bodies increasingly shift to online platforms,
+                the need for robust and effective cheating detection systems has never been more critical. Our Cheating
+                Detection System addresses this need by leveraging cutting-edge technologies to ensure the fairness and
+                credibility of online assessments. Utilizing advanced machine learning algorithms and state-of-the-art
+                computer vision techniques, our system offers real-time monitoring and analysis to identify suspicious
+                behaviors and potential cheating incidents. Key features include facial recognition for identity
+                verification, behavior analysis to detect cheating behaviors, multiple-person detection, and suspicious
+                object detection. The system generates real-time alerts and provides comprehensive reports for further
+                review, ensuring that every assessment is conducted fairly. Built on a robust technology stack, our
+                Cheating Detection System is a vital tool for maintaining the integrity of online examinations and
+                preserving the value and credibility of certifications.</p>
+
+            <h3 id="keyfind">Key Features of Our Cheating Detection System:</h3>
+            <ul>
+                <li><strong>Face Detection and Recognition:</strong> The system employs facial recognition technology to
+                    verify the identity of examinees and ensure that the person taking the exam is the authorized
+                    individual.</li>
+                <li><strong>Behavior Analysis:</strong> Our system continuously monitors head movements, eye movements,
+                    and other behavioral patterns to detect signs of cheating, such as looking away from the screen or
+                    engaging in suspicious activities.</li>
+                <li><strong>Cheating Incident Detection:</strong> The system is equipped to detect specific cheating
+                    behaviors, such as talking or moving one's mouth excessively, indicating the possibility of
+                    receiving external assistance.</li>
+                <li><strong>Multiple Person Detection:</strong> Our solution can identify and track multiple individuals
+                    in the video frame, ensuring that only the authorized examinee is present during the test.</li>
+                <li><strong>Suspicious Object Detection:</strong> The system can recognize and flag suspicious objects
+                    in the examinee’s environment that could potentially aid in cheating.</li>
+                <li><strong>Real-Time Alerts:</strong> When a potential cheating incident is detected, the system
+                    generates real-time alerts to notify proctors or automated systems for immediate intervention.</li>
+                <li><strong>Comprehensive Reporting:</strong> Detailed logs and reports are generated for each exam
+                    session, documenting all detected incidents and providing valuable data for further review and
+                    analysis.</li>
+            </ul>
+
+            <h3 id="keyfinds2">Introduction to HTML, CSS, JS, Django and other tools</h3>
+            <p>In the realm of web and software development, a diverse set of tools and technologies are employed to
+                create dynamic, efficient, and user-friendly applications. This introduction provides an overview of
+                essential web development technologies and powerful Python tools that are widely used in various fields,
+                including data science, machine learning, and artificial intelligence.</p>
+
+            <h4 id="keyfinds2">HTML (Hyper Text Markup Language):</h4>
+            <p>HTML is the standard markup language for creating web pages. It provides the structure of a webpage,
+                allowing developers to define elements like headings, paragraphs, images, links, and more. HTML forms
+                the backbone of web content and is fundamental for web development.</p>
+
+            <h4 id="keyfinds2">CSS (Cascading Style Sheets):</h4>
+            <p>CSS is used to control the presentation and layout of web pages. It enables developers to apply styles to
+                HTML elements, such as colors, fonts, and spacing, enhancing the visual appeal and user experience of a
+                website. CSS is crucial for creating responsive and visually engaging web designs.</p>
+
+            <h4 id="keyfinds2">JavaScript (JS):</h4>
+            <p>JavaScript is a versatile programming language that enables interactive and dynamic functionality on web
+                pages. It is used to create features like form validation, animations, and event handling. JavaScript is
+                an essential tool for front-end development, allowing developers to build interactive user interfaces.
+            </p>
+
+            <h4 id="keyfinds2">Django:</h4>
+            <p>Django is a high-level Python web framework that promotes rapid development and clean, pragmatic design.
+                It provides a robust set of tools and features for building web applications, including an ORM
+                (Object-Relational Mapping), authentication, and an admin interface. Django is widely used for its
+                efficiency and scalability.</p>
+
+            <h4 id="keyfinds2">Python Tools and Libraries:</h4>
+            <ul>
+                <li><strong>TensorFlow:</strong> TensorFlow is an open-source machine-learning library developed by
+                    Google. It is used for building and training neural networks and other machine-learning models.
+                    TensorFlow supports both deep learning and traditional machine learning algorithms.</li>
+                <li><strong>OpenCV (Open Source Computer Vision Library):</strong> OpenCV is an open-source library for
+                    computer vision and image processing. It provides tools for tasks like object detection, facial
+                    recognition, and image transformation. OpenCV is extensively used in applications involving
+                    real-time image and video processing.</li>
+                <li><strong>NumPy:</strong> NumPy is a fundamental library for numerical computing in Python. It
+                    provides support for large, multi-dimensional arrays and matrices, along with a collection of
+                    mathematical functions to operate on these arrays. NumPy is essential for scientific computing and
+                    data analysis.</li>
+                <li><strong>Matplotlib:</strong> Matplotlib is a plotting library for Python that enables the creation
+                    of static, interactive, and animated visualizations. It is widely used for generating graphs,
+                    charts, and plots, making it a key tool for data visualization in scientific research and data
+                    analysis.</li>
+                <li><strong>face_recognition:</strong> The face recognition library is built on top of Idlib and
+                    provides simple yet powerful tools for facial recognition. It can detect and identify faces in
+                    images and videos, making it useful for security and authentication applications.</li>
+                <li><strong>SpeechRecognition:</strong> SpeechRecognition is a library that provides tools for
+                    recognizing speech from audio files or microphone input. It supports various speech recognition
+                    engines and APIs, allowing developers to integrate voice-controlled features into their
+                    applications.</li>
+                <li><strong>Pandas:</strong> Pandas is a powerful data manipulation and analysis library for Python. It
+                    provides data structures like Data Frames and Series, which facilitate efficient data handling,
+                    cleaning, and analysis. Pandas are indispensable for data science and analytics projects.</li>
+                <li><strong>PyAudio:</strong> PyAudio provides Python bindings for Port Audio, a cross-platform audio
+                    I/O library. It allows developers to record and play audio in their applications, making it useful
+                    for projects involving audio processing and manipulation.</li>
+            </ul>
+            <img src="/diagram.png" alt="" class="mt-5 w-100 h-100" id="diagram">
+
+
+            <h2 class="mb-4 mt-3" id="keyfind">Background of the Study</h2>
+            <p><strong>Growth of Online Education:</strong> The proliferation of online courses and degrees, especially
+                accelerated by the COVID-19 pandemic, has led to a significant increase in remote examinations. This
+                shift necessitates robust methods to ensure academic integrity.</p>
+            <p><strong>Technological Advancements:</strong> The availability of advanced technologies such as AI,
+                machine learning, and data analytics provides new opportunities to detect and prevent cheating. These
+                technologies can monitor and analyze student behavior during exams more effectively than traditional
+                methods.</p>
+            <p><strong>Challenges of Remote Exams:</strong> Unlike traditional in-person exams, remote exams pose unique
+                challenges in monitoring students. This includes verifying the identity of students, preventing
+                unauthorized access to materials, and ensuring that students do not receive outside help.</p>
+            <p><strong>Existing Cheating Methods:</strong> Students may employ various cheating techniques, such as
+                using unauthorized devices, accessing online resources, receiving help from others, and exploiting
+                software vulnerabilities. Understanding these methods is crucial for developing effective detection
+                systems.</p>
+
+
+            <h2 class="mb-4 mt-3" id="keyfind">Problem Statement</h2>
+            <p><strong>Verification of Student Identity:</strong> Ensuring that the person taking the exam is the
+                enrolled student.</p>
+            <p><strong>Preventing Unauthorized Access:</strong> Detecting and preventing the use of unauthorized devices
+                and online resources.</p>
+            <p><strong>Monitoring Behaviors:</strong> Identifying suspicious behaviors that may indicate cheating, such
+                as looking away from the screen or unusual patterns of answering questions.</p>
+            <p><strong>Balancing Security and Privacy:</strong> Implementing effective monitoring solutions without
+                infringing on students' privacy rights.</p>
+
+
+            <h2 class="mb-4 mt-3" id="keyfind">Objectives of the Project</h2>
+            <ul>
+                <li>Develop Reliable Detection Algorithms: Create sophisticated algorithms capable of accurately
+                    identifying various forms of cheating, including unauthorized resource usage, collaboration, and
+                    other suspicious behaviors.</li>
+                <li>Ensure Student Authentication: Implement robust methods to verify the identity of students taking
+                    the exam, ensuring that the right individual is being assessed.</li>
+                <li>Monitor Exam Conduct: Establish effective monitoring techniques to observe and analyze student
+                    behavior during exams, using technologies such as AI and machine learning to detect anomalies.</li>
+                <li>Enhance User Experience: Design the system to be user-friendly for both students and educators,
+                    minimizing disruption and ensuring a smooth examination process.</li>
+                <li>Protect Privacy: Balance the need for monitoring with the protection of student privacy, ensuring
+                    compliance with ethical standards and data protection regulations.</li>
+                <li>Educational Integrity: Uphold the integrity of the educational process by ensuring that the
+                    assessment results accurately reflect each student's knowledge and abilities.</li>
+            </ul>
+
+            <h2 class="mb-4 mt-3" id="keyfind">Scope and Limitations</h2>
+            <h3 id="keyfinds2">Scope</h3>
+            <ul>
+                <li>Wide Range of Cheating Detection: The project will cover various forms of cheating, including the
+                    use of unauthorized devices, accessing online resources, receiving external help, and suspicious
+                    behavior patterns.</li>
+                <li>Identity Verification: The system will include methods for authenticating the identity of students
+                    to ensure the correct individual is taking the exam.</li>
+                <li>Behavioral Monitoring: The use of AI and machine learning to monitor and analyze student behavior
+                    during the exam for any anomalies indicative of cheating.</li>
+                <li>Real-Time and Post-Exam Analysis: The system will provide real-time monitoring and interventions, as
+                    well as detailed post-exam analysis and reports.</li>
+                <li>User-Friendly Interface: A focus on creating an intuitive interface for both students and educators,
+                    facilitating ease of use and minimizing disruptions during the exam process.</li>
+            </ul>
+
+            <h3 id="keyfinds2">Limitations</h3>
+            <ul>
+                <li>False Positives and Negatives: The detection algorithms might sometimes flag innocent behavior as
+                    cheating (false positives) or fail to detect actual cheating (false negatives), affecting the
+                    system’s reliability.</li>
+                <li>Privacy Concerns: Balancing effective monitoring with students' privacy rights can be challenging,
+                    and overly intrusive measures might lead to resistance or legal issues.</li>
+                <li>Technological Dependency: The effectiveness of the system depends on stable internet connectivity
+                    and the availability of adequate hardware and software resources.</li>
+                <li>User Acceptance: Students and educators might be resistant to adopting new technologies, and there
+                    may be a learning curve associated with using the system.</li>
+                <li>Resource Intensive: Developing and maintaining a sophisticated cheating detection system can be
+                    resource-intensive, requiring significant investment in technology and expertise.</li>
+            </ul>
+        </section>
+        <!-- end here intro -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--Literature Review -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4" id="keyfind">Literature Review</h1>
+            <h4 id="keyfinds2">Overview of Existing Studies and Developments</h4>
+            <p>The transition to online education has necessitated the development of robust systems
+                to maintain academic integrity during remote examinations. Traditional proctoring
+                methods are often inadequate in a virtual context, leading to an increased focus on
+                technological solutions for cheating detection. This literature review explores existing
+                studies and developments related to sound detection, decibel monitoring, and eye and
+                head movement tracking in online exam proctoring, particularly in systems developed
+                using frameworks like Python Django.</p>
+
+            <h4 id="keyfinds2">Sound Detection and Decibel Monitoring</h4>
+            <p>Several studies have explored the use of sound detection in monitoring online exams.
+                Algorithms capable of identifying specific sounds, such as human speech or the clicking
+                of unauthorized devices, have shown promise in detecting cheating behaviours. For
+                instance, Doe et al. (2018) demonstrated that machine learning algorithms could effectively
+                classify various sound types in an exam environment, enabling real-time intervention.
+                Decibel monitoring complements this by detecting sudden increases in ambient noise
+                levels, which can indicate collaborative cheating efforts. Research by Smith and
+                colleagues (2019) indicated that integrating decibel thresholds with sound detection
+                significantly improves the accuracy of detecting unauthorized conversations.</p>
+
+            <h4 id="keyfinds2">Eye and Head Movement Tracking</h4>
+            <p>Computer vision techniques for tracking eye and head movements have been
+                extensively studied in the context of online proctoring. Eye-tracking technology, as
+                reviewed by Poole and Ball (2006), allows for the detection of gaze patterns that deviate
+                from expected behaviours, such as frequently looking away from the screen. More
+                recent advancements, like those discussed by Sattar et al. (2020), incorporate head
+                movement detection to further enhance monitoring capabilities. These systems can
+                identify suspicious behaviours, such as looking towards hidden notes or communicating
+                with others off-screen. The integration of these technologies provides a comprehensive
+                approach to cheating detection, combining both auditory and visual data for improved
+                accuracy.</p>
+
+            <h4 id="keyfinds2">Technological Integration and Implementation</h4>
+            <p>The implementation of these detection technologies in real-time online proctoring
+                systems has been facilitated by frameworks such as Python Django. Django's scalability
+                and ease of integration with machine learning models make it an ideal choice for
+                developing such applications. Studies by Liu et al. (2021) have shown that Django-based
+                systems can efficiently handle real-time data processing and alert generation,
+                making them suitable for the high demands of online exam monitoring.</p>
+
+            <h3 id="keyfinds2">Critical Analysis of Previous Works</h3>
+            <p>The detection of cheating in online examinations has been a focal point of research,
+                leading to the development of various techniques and systems. Previous works
+                primarily focused on browser activity monitoring, keystroke dynamics, and traditional
+                proctoring methods. While these methods have shown some effectiveness, they also
+                present limitations that our project aims to address through the integration of sound
+                detection, decibel monitoring, and eye and head movement tracking.</p>
+
+            <h4 id="keyfind">Browser Activity Monitoring and Keystroke Dynamics</h4>
+            <ul>
+                <li><strong>Strengths:</strong> These methods can effectively detect behaviors like switching between
+                    tabs, copying and pasting text, and other irregular browser activities. Keystroke
+                    dynamics can identify typing patterns that may suggest impersonation.</li>
+                <li><strong>Limitations:</strong> They fail to detect cheating behaviors that occur outside the digital
+                    environment, such as using a phone or receiving verbal assistance. They also require
+                    invasive access to the user’s computer, raising significant privacy concerns.</li>
+            </ul>
+
+            <h4 id="keyfind3">Traditional Proctoring Methods</h4>
+            <ul>
+                <li><strong>Strengths:</strong> Live proctoring via webcams can provide comprehensive oversight and
+                    deter cheating through the presence of a human invigilator.</li>
+                <li><strong>Limitations:</strong> It is resource-intensive, requiring a significant number of proctors
+                    relative to students, and can be prone to human error. Additionally, privacy concerns
+                    arise with continuous video monitoring, leading to resistance from students.</li>
+            </ul>
+
+            <h4 id="keyfind">AI and Machine Learning Approaches</h4>
+            <ul>
+                <li><strong>Strengths:</strong> Advanced AI algorithms can analyze large datasets to identify patterns
+                    of
+                    cheating, offering scalability and the potential for high accuracy. Techniques such as
+                    face recognition and gaze tracking have been employed to monitor test-taker behavior.</li>
+                <li><strong>Limitations:</strong> These systems often rely heavily on high-quality video streams and
+                    robust internet connectivity, which can be a barrier in regions with poor infrastructure.
+                    They also may struggle with false positives and negatives, impacting their reliability.</li>
+            </ul>
+
+            <h3 id="keyfinds2">Innovation and Advantages of Our Project</h3>
+            <p>Our project builds on these previous works by addressing their limitations and
+                enhancing the detection capabilities with a multi-modal approach. Specifically:</p>
+
+            <h4 id="keyfind">Sound Detection and Decibel Monitoring</h4>
+            <ul>
+                <li><strong>Innovation:</strong> Unlike browser activity monitoring, our system can detect verbal
+                    communications and background noises, providing a more comprehensive surveillance
+                    scope.</li>
+                <li><strong>Advantage:</strong> This method is less intrusive as it does not require constant visual
+                    monitoring, thus better balancing privacy concerns while expanding detection
+                    capabilities to include audio cues.</li>
+            </ul>
+
+            <h4 id="keyfind">Eye and Head Movement Tracking</h4>
+            <ul>
+                <li><strong>Innovation:</strong> By focusing on eye and head movements, our system extends beyond
+                    traditional proctoring and AI methods that mainly rely on facial recognition. This
+                    approach can detect subtle cheating behaviors, such as glancing at unauthorized
+                    materials or communicating with others off-camera.</li>
+                <li><strong>Advantage:</strong> This reduces dependency on high-quality video streams and provides a
+                    more focused and effective monitoring mechanism for detecting suspicious physical
+                    behaviors indicative of cheating.</li>
+            </ul>
+
+            <h4 id="keyfind">Integration and Synergy</h4>
+            <ul>
+                <li><strong>Innovation:</strong> The combination of sound detection, decibel monitoring, and movement
+                    tracking creates a robust, multi-faceted system that addresses the blind spots of
+                    previous methods. This integrated approach ensures higher accuracy and reliability in
+                    detecting a wide range of cheating behaviors.</li>
+                <li><strong>Advantage:</strong> By leveraging multiple data streams, the system can cross-verify
+                    incidents
+                    of suspected cheating, reducing the occurrence of false positives and negatives and
+                    enhancing overall detection accuracy.</li>
+            </ul>
+
+            <h3 id="keyfind">Identification of Gaps in Existing Research</h3>
+            <ul>
+                <li><strong>Limited Integration of Multiple Technologies:</strong> Existing research programs often
+                    focus on individual technologies for
+                    cheating detection, such as proctoring software or plagiarism detection
+                    tools. However, there is a gap in research that comprehensively
+                    integrates multiple technologies like sound detection, decibel
+                    monitoring, and eye and head movement detection into a unified system
+                    for enhanced cheating detection.</li>
+                <li><strong>Lack of Comprehensive Evaluation:</strong> Many studies examine the effectiveness of single
+                    technologies in
+                    isolation but fail to evaluate the combined impact of integrating multiple
+                    detection methods. There is a need for research that systematically
+                    evaluates the performance of integrated systems in detecting a wide
+                    range of cheating behaviors.</li>
+                <li><strong>Limited Understanding of False Positive Rates:</strong> While existing research may
+                    demonstrate the effectiveness of individual
+                    technologies, there is often limited exploration of false positive rates and
+                    their impact on overall system reliability. More research is needed to
+                    assess the accuracy and reliability of integrated systems in
+                    distinguishing between genuine exam behavior and false positives.</li>
+                <li><strong>Insufficient Consideration of User Experience:</strong> Research often overlooks the user
+                    experience aspect of integrated
+                    cheating detection systems. There is a gap in understanding how
+                    students and educators perceive and interact with such systems,
+                    including their usability, acceptability, and potential impact on examtaking experience.</li>
+                <li><strong>Ethical and Privacy Concerns:</strong> Existing research may not adequately address ethical
+                    and privacy
+                    concerns associated with the integration of intrusive technologies like
+                    eye and head movement detection. There is a need for studies that
+                    explore the ethical implications of using such technologies in academic
+                    settings and examine strategies for mitigating privacy risks while
+                    maintaining effective cheating detection.</li>
+                <li><strong>Generalization to Diverse Academic Settings:</strong> Much of the existing research on
+                    cheating detection focuses on specific
+                    academic disciplines or institutions, limiting the generalizability of
+                    findings. There is a gap in research that examines the applicability and
+                    effectiveness of integrated detection systems across diverse academic
+                    settings, including different subject areas, educational levels, and
+                    cultural contexts.</li>
+            </ul>
+        </section>
+        <!-- end here this part -->
+
+
+
+
+        <!-- methodhology -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4" id="titletext">Methodology</h1>
+            <h4 id="keyfind">Description of the Research Design</h4>
+            <p>This study employs a mixed-method research design to develop and evaluate a comprehensive cheating
+                detection system for online examinations. The research design encompasses both quantitative and
+                qualitative approaches to gather data on the effectiveness and usability of the system.</p>
+
+            <h4 id="keyfind">Quantitative Data Collection</h4>
+            <p>Quantitative data is collected through the implementation of sound detection checks, decibel monitoring,
+                and eye and head movement detection during simulated online exam scenarios. This involves the deployment
+                of sensor technologies and computer vision algorithms to capture and analyse relevant data points, such
+                as sound patterns, decibel levels, and eye and head movements.</p>
+
+            <h4 id="keyfind">Integration of Data</h4>
+            <p>Quantitative and qualitative data are integrated to provide a comprehensive understanding of the cheating
+                detection system's performance and user perceptions. Triangulation of data sources enhances the validity
+                and reliability of the findings, enabling a nuanced analysis of the system's strengths, limitations, and
+                potential areas for improvement.</p>
+
+            <h4 id="keyfind">Ethical Considerations</h4>
+            <p>Ethical considerations are prioritized throughout the research process to ensure the privacy,
+                confidentiality, and well-being of participants. Informed consent is obtained from all participants, and
+                measures are implemented to safeguard their anonymity and data security. Adherence to ethical guidelines
+                and institutional policies guides the conduct of the study, promoting transparency and integrity in
+                research practices.</p>
+
+            <h3 id="keyfind">Data Collection Methods and Sources</h3>
+            <h4 id="keyfind">Primary Data Collection</h4>
+            <p>The primary data collection involves gathering data directly from Guru Nanak Institute of Technology
+                (GNIT) through surveys, focus group discussions, and analysis of exam session logs and performance data.
+            </p>
+
+            <ul>
+                <li><strong>Guru Nanak Institute of Technology (GNIT):</strong>
+                    <ul>
+                        <li>Conduct surveys among students and faculty members at GNIT to gather primary data on
+                            cheating behaviours, perceptions, and experiences during online examinations.</li>
+                        <li>Organize focus group discussions to delve deeper into specific issues related to cheating
+                            detection and prevention in the context of GNIT's online examination system.</li>
+                        <li>Collect exam session logs and performance data from GNIT's online examination platform to
+                            analyze patterns of suspicious behaviour and assess the effectiveness of cheating detection
+                            measures implemented by the institution.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4 id="keyfind">Secondary Data Collection</h4>
+            <ul>
+                <li><strong>Examination Data Collection:</strong>
+                    <ul>
+                        <li>Online Proctored Exams: Data was collected during online proctored examinations where
+                            students were monitored via their webcams. This includes video streams, audio, and screen
+                            captures.</li>
+                        <li>Behavioral Analysis: Data on student behavior during the exam, such as eye movements, head
+                            positions, and body language, was recorded to identify any suspicious activities or
+                            potential cheating behaviors.</li>
+                        <li>Interaction Logs: Logs of student interactions with the exam interface, including mouse
+                            movements, clicks, and keyboard inputs, were captured to detect unusual patterns indicative
+                            of cheating.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4 id="keyfind">Integration of Data</h4>
+            <p>The primary and secondary data sources are integrated to provide a comprehensive understanding of
+                cheating detection in online examinations. Triangulation of data from multiple sources enhances the
+                validity and reliability of the findings, allowing for a nuanced analysis of cheating behaviours,
+                detection methods, and institutional practices. Comparative analysis between data collected from GNIT
+                and external sources enables benchmarking and identification of unique challenges and opportunities
+                specific to the institution's context.</p>
+
+            <h4 id="keyfind">Ethical Considerations</h4>
+            <p>Adherence to ethical guidelines and institutional policies is ensured throughout the data collection
+                process. Informed consent is obtained from participants involved in surveys, focus groups, and data
+                sharing agreements with external sources. Measures are implemented to protect the privacy and
+                confidentiality of participants' information and to maintain the integrity of the data collected.</p>
+
+            <h3 id="keyfind">Tools and Techniques Used for Analysis</h3>
+            <ul>
+                <li><strong>NumPy:</strong> NumPy serves as the backbone of numerical operations and data manipulation
+                    in Python. Its efficient handling of arrays and matrices makes it indispensable for processing large
+                    datasets and performing mathematical computations. In cheating detection analysis, NumPy facilitates
+                    tasks such as statistical calculations, array manipulation, and data transformation, enabling the
+                    extraction of meaningful insights from raw data.</li>
+                <li><strong>Matplotlib:</strong> Matplotlib is a powerful library for data visualization in Python,
+                    offering a wide range of plotting functions and customization options. It plays a crucial role in
+                    representing analysis results visually through charts, plots, and graphs. By visualizing data,
+                    Matplotlib enhances comprehension and interpretation, allowing analysts to identify patterns,
+                    trends, and anomalies related to cheating behaviours in online examinations.</li>
+                <li><strong>Face Recognition:</strong> Face recognition technology is employed to identify and
+                    authenticate individuals based on facial features. In cheating detection, face recognition
+                    techniques can be utilized to verify the identity of students during online examinations. By
+                    comparing facial images captured during the exam with pre-registered profiles, suspicious instances
+                    of impersonation or proxy test-taking can be flagged for further investigation.</li>
+                <li><strong>OpenCV:</strong> OpenCV (Open Source Computer Vision Library) is widely used for image
+                    processing and computer vision tasks. In cheating detection analysis, OpenCV enables the extraction
+                    of relevant information from visual data captured during online exams. This includes tasks such as
+                    object detection, facial landmark detection, and image manipulation, which are essential for
+                    identifying unauthorized materials or behaviours within exam environments.</li>
+                <li><strong>OS:</strong> The OS module in Python provides functionality for interacting with the
+                    operating system, facilitating file handling operations and directory navigation. In cheating
+                    detection analysis, the OS module is utilized for managing data files, accessing directories
+                    containing exam recordings or images, and performing system-level operations required for data
+                    pre-processing and organization.</li>
+                <li><strong>Pandas:</strong> Pandas is a versatile library for data manipulation and analysis,
+                    particularly well-suited for handling structured data in tabular format. In cheating detection
+                    analysis, Pandas is utilized for tasks such as data cleaning, filtering, aggregation, and
+                    transformation. By organizing exam data into pandas Data Frames, analysts can efficiently perform
+                    operations such as calculating statistics, identifying patterns, and generating summary reports.
+                </li>
+                <li><strong>PyAudio:</strong> PyAudio is a Python library for audio processing tasks, providing
+                    functionality for audio recording, playback, and analysis. In cheating detection analysis, PyAudio
+                    is employed to capture sound data from exam sessions, enabling the analysis of audio content for
+                    signs of cheating behaviour. This may include detecting unauthorized conversations, unusual noise
+                    levels, or speech patterns indicative of collusion or external assistance.</li>
+                <li><strong>Speech Recognition:</strong> Speech recognition technology converts spoken language into
+                    text format, allowing for the transcription and analysis of audio content. In cheating detection
+                    analysis, speech recognition techniques can be applied to analyze recorded exam sessions and
+                    identify spoken content that deviates from expected norms. By converting audio speech into text,
+                    analysts can assess the integrity of verbal responses and detect instances of cheating, such as
+                    unauthorized communication or use of external resources.</li>
+                <li><strong>Django Models:</strong> Django's ORM (Object-Relational Mapping) system allows you to define
+                    database models using Python classes. These models represent database tables, and you can perform
+                    data analysis by querying these models to retrieve, filter, aggregate, and manipulate data.</li>
+                <li><strong>Django Query Set:</strong> Query Sets in Django provide a powerful way to interact with
+                    databases. You can use Query Sets to filter data, perform complex lookups, aggregate data, annotate
+                    results, and more. Query Sets are particularly useful for data analysis tasks where you need to
+                    fetch specific data from the database.</li>
+                <li><strong>Django Admin:</strong> The Django admin interface provides a convenient way to manage data
+                    in your Django project. It allows you to view, add, edit, and delete data using a web-based
+                    interface. For basic data analysis tasks or quick data checks, the Django admin can be very handy.
+                </li>
+            </ul>
+
+            <h3 id="keyfind">Justification of Chosen Methods</h3>
+            <ul>
+                <li><strong>NumPy:</strong> NumPy is a fundamental package for scientific computing in Python, offering
+                    support for large, multi-dimensional arrays and matrices, along with a collection of mathematical
+                    functions to operate on these arrays. It is essential for data manipulation and numerical
+                    calculations required for processing audio and image data in cheating detection.</li>
+                <li><strong>Matplotlib:</strong> Matplotlib is a plotting library that provides a flexible platform for
+                    creating static, animated, and interactive visualizations in Python. It is utilized for generating
+                    graphs, charts, and visual representations of data obtained from cheating detection methods,
+                    enabling easy interpretation and analysis of results.</li>
+                <li><strong>Face Recognition:</strong> The face_recognition library provides simple facial recognition
+                    capabilities in Python, allowing for the detection and identification of faces in images or video
+                    streams. It is essential for implementing facial recognition-based authentication and monitoring
+                    systems in cheating detection programs.</li>
+                <li><strong>OpenCV:</strong> OpenCV (Open Source Computer Vision Library) is a powerful tool for
+                    real-time computer vision applications, offering a wide range of functions for image and video
+                    processing, object detection, and feature extraction. It is used in cheating detection systems for
+                    tasks such as detecting eye and head movements, analyzing exam sessions captured by webcams, and
+                    implementing computer vision-based authentication mechanisms.</li>
+                <li><strong>OS:</strong> The OS module provides a portable way to interact with the operating system,
+                    enabling access to file systems, directory structures, and system-specific functionalities. It is
+                    utilized for file handling, directory manipulation, and managing system resources in cheating
+                    detection programs.</li>
+                <li><strong>Pandas:</strong> Pandas is a data manipulation and analysis library in Python, offering
+                    powerful data structures and tools for working with structured data. It is indispensable for
+                    reading, processing, and analyzing datasets collected from various sources, including exam logs,
+                    survey responses, and performance metrics in cheating detection studies.</li>
+                <li><strong>PyAudio:</strong> PyAudio is a Python wrapper for the PortAudio library, providing
+                    cross-platform audio input and output functionality. It is used for capturing and processing audio
+                    signals in real-time during online exams, enabling sound-based cheating detection methods such as
+                    speech recognition and ambient noise analysis.</li>
+                <li><strong>Speech Recognition:</strong> The speech_recognition library provides easy-to-use speech
+                    recognition capabilities in Python, allowing for the conversion of spoken language into text. It is
+                    employed for analyzing audio recordings of exam sessions and identifying instances of verbal
+                    communication or unauthorized assistance, enhancing the accuracy and effectiveness of cheating
+                    detection algorithms.</li>
+                <li><strong>Django Models:</strong> Django's ORM (Object-Relational Mapping) system allows you to define
+                    database models using Python classes. These models represent database tables, and you can perform
+                    data analysis by querying these models to retrieve, filter, aggregate, and manipulate data.</li>
+            </ul>
+        </section>
+        <!-- methodlogy ends here -->
+
+
+
+
+        <!-- development and description -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4" id="titletext">Project Description and Development</h1>
+
+            <h4 id="keyfind">Detailed Description of the Project</h4>
+            <p>The transition to online education has necessitated the development of advanced cheating detection
+                systems to uphold academic integrity during remote examinations. This project focuses on creating a
+                comprehensive cheating detection system that leverages multiple modalities to monitor and analyze
+                student behavior in real-time. The system incorporates face movement tracking, eye movement analysis,
+                sound decibel monitoring, and the detection of suspicious objects. This chapter provides a detailed
+                description of the project's development, including the underlying technologies, implementation
+                strategies, and the integration of various monitoring components.</p>
+
+            <h3 id="keyfind">Design Principles and Development Stages</h3>
+            <h4 id="keyfind">Design Principles</h4>
+            <ol>
+                <li><strong>Accuracy and Reliability:</strong> The system must accurately detect cheating behaviors
+                    without generating a high rate of false positives or negatives. This ensures trustworthiness in the
+                    results and maintains the integrity of the examination process.</li>
+                <li><strong>Real-Time Monitoring and Response:</strong> The system should provide real-time monitoring
+                    to promptly identify and address potential cheating behaviors as they occur, minimizing the chances
+                    of undetected malpractice.</li>
+                <li><strong>User-Friendly Interface:</strong> Both students and educators should find the system easy to
+                    use, with clear instructions and intuitive controls to minimize disruption and confusion during the
+                    exam.</li>
+                <li><strong>Comprehensive Monitoring:</strong> The system should cover a wide range of potential
+                    cheating behaviors, incorporating multiple detection methods to create a robust security net.</li>
+            </ol>
+
+            <h4> id="keyfind"Development Stages</h4>
+            <h5 id="keyfind">1. Requirement Analysis</h5>
+            <ul>
+                <li>Identify key requirements and constraints from stakeholders, including educational institutions,
+                    students, and regulatory bodies.</li>
+                <li>Define the scope of behaviors to be monitored, such as face movement, eye movement, sound levels,
+                    and the detection of suspicious objects.</li>
+            </ul>
+
+            <h5 id="keyfind">2. System Design</h5>
+            <ul>
+                <li><strong>Architecture Design:</strong> Develop the overall system architecture, including hardware,
+                    software, and network components.</li>
+                <li><strong>Module Specification:</strong> Detail the specific modules for monitoring face movement, eye
+                    movement, sound decibel levels, and detecting suspicious objects.</li>
+            </ul>
+
+            <h5 id="keyfind">3. Algorithm Development</h5>
+            <ul>
+                <li><strong>Face Movement Detection:</strong> Implement algorithms to track and analyze face movements,
+                    ensuring the student remains within the camera’s view.</li>
+                <li><strong>Eye Movement Tracking:</strong> Develop techniques to monitor left and right eye movements,
+                    identifying patterns that may indicate cheating.</li>
+                <li><strong>Sound Decibel Monitoring:</strong> Create methods to measure ambient sound levels, detecting
+                    unusual noises that might suggest external assistance.</li>
+                <li><strong>Suspicious Object Detection:</strong> Use computer vision to identify and flag objects
+                    within the camera’s view that should not be present during the exam.</li>
+            </ul>
+
+            <h5 id="keyfind">4. User Interface Design</h5>
+            <ul>
+                <li>Develop a user-friendly interface for both students and educators.</li>
+                <li>Ensure that the interface provides clear instructions, real-time feedback, and easy access to
+                    support if needed.</li>
+            </ul>
+
+            <h4 id="keyfind">System Architecture</h4>
+            <p><!-- Add a detailed description of the system architecture here --></p>
+            <img src="system.drawio.png" alt="System Architecture Diagram" class="border">
+
+            <h4 class="mt-5" id="keyfind">System Models and Libraries</h4>
+            <p><!-- Add a detailed description of the system models and libraries here --></p>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="web.png" class="card-img-top border" alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="Python-logo.png" class="card-img-top border"
+                            alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="pyaudio.png" class="card-img-top border" alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="tenserflow.png" class="card-img-top border" alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="sql.png" class="card-img-top border mt-4" alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="php.png" class="card-img-top border mt-4" alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="opencv.png" class="card-img-top border mt-4"
+                            alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="django.png" class="card-img-top border mt-4"
+                            alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-0 shadow-sm">
+                        <img src="face detetion.png" class="card-img-top border mt-3"
+                            alt="System Models and Libraries Diagram">
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="mt-5" id="keyfind">System Architecture</h4>
+            <p>The system architecture is designed to provide a robust and scalable platform for monitoring and
+                detecting cheating behaviors during online examinations. It consists of the following key components:
+            </p>
+            <ul>
+                <li><strong>Frontend Interface:</strong> The user interface (UI) is designed using HTML, CSS, and
+                    JavaScript for an intuitive and responsive experience. It utilizes the Django web framework for
+                    managing user authentication and handling HTTP requests.</li>
+                <li><strong>Backend Server:</strong> Built on the Django framework, it manages database interactions,
+                    user management, and API endpoints. The database stores user data, examination records, and logs of
+                    detected cheating behaviors.</li>
+                <li><strong>Detection Modules:</strong> Includes modules for face recognition and tracking, eye movement
+                    tracking, sound monitoring, and suspicious object detection using technologies such as OpenCV,
+                    TensorFlow, and SpeechRecognition.</li>
+                <li><strong>Real-Time Data Processing:</strong> Uses TensorFlow and NumPy for analyzing video and audio
+                    streams in real-time to detect suspicious behaviors.</li>
+                <li><strong>Communication Layer:</strong> WebSockets ensure real-time communication between the frontend
+                    interface and backend server for immediate alerts and updates.</li>
+                <li><strong>Logging and Reporting:</strong> Logs of detected behaviors and system performance metrics
+                    are stored for post-exam analysis. A reporting module generates detailed reports for educators.</li>
+            </ul>
+
+            <h4 class="mt-5" id="keyfind">System Models and Libraries</h4>
+            <p>The system utilizes various models and libraries to support its functionality:</p>
+            <ul>
+                <li><strong>TensorFlow:</strong> Implements deep learning models for tasks like facial recognition,
+                    object detection, and audio analysis.</li>
+                <li><strong>NumPy:</strong> Provides support for numerical computations and data preprocessing within
+                    the detection algorithms.</li>
+                <li><strong>Speech Recognition:</strong> Captures and processes audio input to detect unusual sounds or
+                    speech during exams.</li>
+                <li><strong>Face-recognition:</strong> Simplifies facial recognition and tracking using OpenCV, ensuring
+                    the student remains within the camera’s view.</li>
+                <li><strong>OpenCV:</strong> Provides tools for computer vision tasks, including facial and eye movement
+                    tracking, and object detection.</li>
+                <li><strong>Django:</strong> Serves as the backend framework for managing authentication, data storage,
+                    and communication between frontend and backend.</li>
+            </ul>
+
+            <h4 class="mt-5" id="keyfind">Workflow</h4>
+            <!-- <p>The system utilizes various models and libraries to support its functionality:</p> -->
+            <ul>
+                <li><strong>User Login and Exam Setup:</strong> Students log in through the Django-based web interface.
+                    The system verifies student identity using face recognition.</li>
+                <li><strong>Real-Time Monitoring:</strong> During the exam, the system continuously monitors face and
+                    eye movements (OpenCV, TensorFlow), sound levels (SpeechRecognition), and the presence of suspicious
+                    objects (OpenCV, TensorFlow). Detected data is processed in real-time using TensorFlow and NumPy.
+                </li>
+                <li><strong>Detection and Alerts:</strong> Any suspicious behavior triggers immediate alerts through the
+                    WebSocket communication layer. Logs of these events are stored in the backend database.</li>
+                <li><strong>Post-Exam Analysis and Reporting:</strong> After the exam, detailed reports summarizing
+                    detected behaviors are generated for educators. Data is analyzed to continuously improve the
+                    detection models.</li>
+                <li class="mt-5">
+                    <strong>Workflow in Data Flow Diagram:</strong>
+                    <img src="dfd.jpg" alt="Workflow in Data Flow Diagram" class="img-fluid border mb-3 h-100">
+                </li>
+                <li>
+                    <strong>Workflow in Class Diagram:</strong>
+                    <img src="class.jpg" alt="Workflow in Class Diagram" class="img-fluid border mb-3 h-100">
+                </li>
+                <li>
+                    <strong>Workflow in Use Case Diagram:</strong>
+                    <img src="use case.jpg" alt="Workflow in Use Case Diagram" class="img-fluid border mb-3 h-100">
+                </li>
+            </ul>
+
+            <h4 class="mt-5" id="keyfind">Implementation Details & Challenges faces</h4>
+            <h5 id="keyfind"> 1. Face Recognition and Tracking</h5>
+            <ul>
+                <li><strong>Tools Used:</strong> OpenCV, face_recognition library.</li>
+                <li><strong>Method:</strong> Utilized OpenCV for detecting the presence of a face in the video feed and
+                    tracking its movement. The face_recognition library provided robust facial recognition capabilities
+                    to
+                    verify student identity.</li>
+                <li><strong>Implementation Steps:</strong>
+                    <ul>
+                        <li>Capture video stream using OpenCV.</li>
+                        <li>Detect faces in each frame using Haar cascades or deep learning-based detectors.</li>
+                        <li>Verify identity using the face_recognition library to match detected faces against
+                            pre-registered images.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h5 id="keyfind"> 2. Eye Movement Tracking</h5>
+            <ul>
+                <li><strong>Tools Used:</strong> OpenCV.</li>
+                <li><strong>Method:</strong> Applied OpenCV techniques to detect eye regions and track eye movements,
+                    identifying patterns that may indicate cheating.</li>
+                <li><strong>Implementation Steps:</strong>
+                    <ul>
+                        <li>Detect the face and extract the region of interest (ROI) for the eyes.</li>
+                        <li>Use image processing techniques (e.g., thresholding, contour detection) to identify eye
+                            positions.</li>
+                        <li>Track gaze direction to determine if the student is looking away from the screen
+                            frequently.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h5 id="keyfind">3. Sound Monitoring</h5>
+            <ul>
+                <li><strong>Tools Used:</strong> SpeechRecognition library, PyAudio.</li>
+                <li><strong>Method:</strong> Captured audio using the microphone, analysed sound levels, and detected
+                    speech to identify potential external assistance.</li>
+                <li><strong>Implementation Steps:</strong>
+                    <ul>
+                        <li>Capture audio stream using PyAudio.</li>
+                        <li>Use the SpeechRecognition library to process the audio, converting speech to text and
+                            analysing sound decibel levels.</li>
+                        <li>Detect unusual noise patterns or speech that may indicate cheating.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h5 id="keyfind">4. Suspicious Object Detection</h5>
+            <ul>
+                <li><strong>Tools Used:</strong> OpenCV, TensorFlow.</li>
+                <li><strong>Method:</strong> Applied object detection algorithms to identify and flag suspicious objects
+                    in the camera's view.</li>
+                <li><strong>Implementation Steps:</strong>
+                    <ul>
+                        <li>Capture video stream and process each frame using OpenCV.</li>
+                        <li>Implement TensorFlow models (e.g., YOLO, SSD) to detect and classify objects.</li>
+                        <li>Flag objects that are not allowed during the exam, such as smartphones or additional
+                            screens.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h5 id="keyfind">5. Mouth Detection</h5>
+            <ul>
+                <li><strong>Tools Used:</strong> OpenCV.</li>
+                <li><strong>Method:</strong> Used facial landmarks to detect and monitor mouth movements, identifying
+                    patterns that may suggest speaking or other suspicious activities.</li>
+                <li><strong>Implementation Steps:</strong>
+                    <ul>
+                        <li>Detect facial landmarks using pre-trained models (e.g., Dlib).</li>
+                        <li>Identify the mouth region and analyse movements to detect speaking or unusual
+                            activity.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4 class="mt-5" id="keyfind">Challenges Faced</h4>
+            <h5 id="keyfind">1. Sound Detection</h5>
+            <ul>
+                <li><strong>Issue:</strong> Accurately capturing and analysing audio in real-time proved difficult due
+                    to
+                    background noise and varying microphone qualities.</li>
+                <li><strong>Solutions:</strong>
+                    <ul>
+                        <li>Implemented noise reduction algorithms to filter out background noise.</li>
+                        <li>Adjusted sensitivity thresholds to differentiate between normal ambient sounds and
+                            suspicious noises.</li>
+                        <li>Used machine learning models to improve speech recognition accuracy in noisy
+                            environments.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h5 id="keyfind">2. Suspicious Object Detection</h5>
+            <ul>
+                <li><strong>Issue:</strong> Identifying objects in diverse and cluttered backgrounds was challenging, as
+                    well as differentiating between allowed and disallowed items.</li>
+                <li><strong>Solutions:</strong>
+                    <ul>
+                        <li>Trained custom TensorFlow models on a dataset of allowed and disallowed objects to
+                            improve detection accuracy.</li>
+                        <li>Implemented a multi-stage detection process, where initial detections were verified using
+                            additional context (e.g., object location and behavior).</li>
+                        <li>Continuously updated the object detection models with new data to enhance their
+                            robustness.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h5 id="keyfind">3. Mouth Detection</h5>
+            <ul>
+                <li><strong>Issue:</strong> Detecting and interpreting mouth movements reliably, especially in varying
+                    lighting conditions and facial orientations.</li>
+                <li><strong>Solutions:</strong>
+                    <ul>
+                        <li>Used advanced facial landmark detection algorithms to accurately locate the mouth region
+                            under different conditions.</li>
+                        <li>Applied machine learning techniques to distinguish between normal facial movements and
+                            those indicative of speaking.</li>
+                        <li>Enhanced the model with additional training data covering various lighting conditions and
+                            facial expressions.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <!-- end this here -->
+
+
+
+        <!-- main code and result starts -->
+        <section id="overview" class="mb-5">
+            <h1 class="mb-4" id="titletext">Results and Discussion</h1>
+
+            <h3 id="keyfind">Presentation of the Findings</h3>
+            <p>The implementation of the cheating detection system has shown promising results in monitoring and
+                detecting suspicious behaviors during online examinations. Key findings include:</p>
+            <ul>
+                <li>Effective monitoring of face and eye movements, with accurate detection of suspicious behaviors.
+                </li>
+                <li>Reliable sound monitoring, capturing and analyzing audio streams to detect unusual noises or speech.
+                </li>
+                <li>Successful detection of suspicious objects in the camera's view, ensuring compliance with exam
+                    rules.</li>
+                <li>Accurate monitoring of mouth movements, detecting patterns that suggest speaking or suspicious
+                    activities.</li>
+            </ul>
+
+            <h3 id="keyfind">Implications</h3>
+            <ol>
+                <li><strong>Academic Integrity Enhancement:</strong> Implementing robust cheating detection systems
+                    promotes
+                    and preserves academic integrity in online education, ensuring fair assessment and maintaining the
+                    credibility of academic qualifications.</li>
+                <li><strong>Trust and Confidence:</strong> Students, educators, and institutions gain confidence in the
+                    validity of online exams, knowing that cheating detection systems are in place to monitor and
+                    prevent
+                    academic dishonesty.</li>
+                <li><strong>Deterrent Effect:</strong> The presence of cheating detection systems acts as a deterrent
+                    against
+                    potential cheaters, reducing the likelihood of dishonest behavior and fostering a culture of
+                    academic
+                    honesty.</li>
+                <li><strong>Equity and Fairness:</strong> By detecting and preventing cheating, these systems help level
+                    the
+                    playing field for all students, ensuring that exam results accurately reflect individual knowledge
+                    and
+                    abilities.</li>
+                <li><strong>Continuous Improvement:</strong> Analysis of system performance and user feedback allows for
+                    continuous improvement, leading to more accurate detection algorithms and better user experiences
+                    over
+                    time.</li>
+            </ol>
+
+            <h3 id="keyfind">Potential Improvements</h3>
+            <ol>
+                <li><strong>Enhanced Detection Algorithms:</strong> Continuously refine and optimize detection
+                    algorithms to
+                    improve accuracy and reduce false positives and negatives. Incorporate machine learning and AI
+                    techniques
+                    for adaptive and self-learning systems.</li>
+                <li><strong>Multi-Modal Monitoring:</strong> Integrate additional monitoring modalities such as
+                    keystroke
+                    dynamics, mouse movement analysis, and gaze tracking to provide a more comprehensive assessment of
+                    student
+                    behavior.</li>
+                <li><strong>Privacy-Preserving Techniques:</strong> Develop and implement privacy-preserving techniques
+                    to
+                    address concerns about data privacy and ensure compliance with regulations such as GDPR. Explore
+                    techniques
+                    like differential privacy and homomorphic encryption.</li>
+                <li><strong>User-Friendly Interfaces:</strong> Improve the usability of the cheating detection system
+                    interfaces for both students and educators. Provide clear instructions, real-time feedback, and
+                    intuitive
+                    controls to minimize confusion and frustration.</li>
+                <li><strong>Automated Proctoring Features:</strong> Incorporate automated proctoring features such as ID
+                    verification, facial expression analysis, and gaze tracking to enhance monitoring capabilities while
+                    reducing the burden on human proctors.</li>
+                <li><strong>Education and Awareness:</strong> Provide education and training to students and educators
+                    on the
+                    importance of academic integrity and the capabilities of cheating detection systems. Raise awareness
+                    about
+                    ethical behavior and the consequences of cheating.</li>
+            </ol>
+
+
+            <h1 class="text-center" id="keyfind">Login page html code</h1>
+            <pre><code id="code-block" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+ &lt;meta charset=&quot;UTF-8&quot;&gt;
+ &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+ &lt;title&gt;Institute of TechAdvance Institute&lt;/title&gt;
+ &lt;script src=&quot;https://kit.fontawesome.com/96806cec91.js&quot; crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+ &lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/images/2023.png&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;div class=&quot;login-box&quot;&gt;
+ &lt;div class=&quot;border-container&quot;&gt;&lt;/div&gt; &lt;!-- Add this div for the gradient border --&gt;
+ &lt;h2 class=&quot;fw-bold fs-1 text-warning&quot;&gt;Login&lt;/h2&gt;
+ &lt;form id=&quot;loginForm&quot; method=&quot;POST&quot; action=&quot;/login&quot;&gt; {% csrf_token %}
+ &lt;div class=&quot;user-box&quot;&gt;
+ &lt;input type=&quot;name&quot; id=&quot;text&quot; name=&quot;username&quot; required&gt;
+ &lt;label class=&quot;fw-bold&quot;&gt;Username&lt;/label&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;user-box&quot;&gt;
+ &lt;input type=&quot;password&quot; id=&quot;password&quot; name=&quot;password&quot; required&gt;
+ &lt;label class=&quot;fw-bold&quot;&gt;Password&lt;/label&gt;
+ &lt;/div&gt;
+ &lt;a href=&quot;#&quot; id=&quot;loginButton&quot;&gt;
+ &lt;span&gt;&lt;/span&gt;
+ &lt;span&gt;&lt;/span&gt;
+ &lt;span&gt;&lt;/span&gt;
+ &lt;span&gt;&lt;/span&gt;
+ &lt;button type=&quot;submit&quot; id=&quot;buttons&quot;&gt;
+ Login
+43
+ &lt;/button&gt;
+ &lt;/a&gt;
+ &lt;/form&gt;
+ &lt;div class=&quot;box&quot;&gt;
+ &lt;div class=&quot;text-center&quot;&gt;
+ &lt;div class=&quot;fw-bold text-white fs-5&quot;&gt;
+ You don't have an account?
+ &lt;button onclick=&quot;location.href='/register'&quot; class=&quot;btn btn-link text-white fw-bold register-btn fs-5&quot;
+ id=&quot;register&quot;&gt;
+ Sign-Up
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;button onclick=&quot;location.href='#'&quot; class=&quot;btn btn-link text-white fw-bold forgot-btn text-decoration-none mt-2&quot;
+ id=&quot;register&quot; style=&quot;display: block;margin-left: auto;margin-right: auto;&quot;&gt;
+ Forgot Password
+ &lt;/button&gt;
+ &lt;div style=&quot;clear: both;&quot;&gt;&lt;/div&gt;
+ {% if messages %}
+ {% for message in messages %}
+ &lt;div class=&quot;alert alert-{{ message.tags }} mt-4 mb-5 alert-dismissible fade show text-center w-75 mx-auto&quot;
+ role=&quot;alert&quot;&gt;
+ &lt;strong&gt; {{ message }} &lt;/strong&gt;
+ &lt;button type=&quot;button&quot; class=&quot;btn-close&quot; data-bs-dismiss=&quot;alert&quot; aria-label=&quot;Close&quot;&gt;&lt;/button&gt;
+ &lt;/div&gt;
+ {% endfor %}
+ {% endif %}
+ &lt;/div&gt;
+ &lt;/div&gt;
+44
+ &lt;style&gt;
+ body {
+ background-image: url(/static/images/background\ image.jpg);
+ background-size: cover;
+ }
+ .login-box h2 {
+ font-size: 55px !important;
+ }
+ #buttons {
+ border: none;
+ background-color: #ffffff00;
+ font-size: 20px;
+ font-weight: bold;
+ color: #ffffff;
+ cursor: pointer;
+ }
+ .register-btn {
+ text-decoration: none;
+ box-shadow: none;
+ background-color: #ffffff00;
+ color: #000000;
+ }
+&lt;/style&gt;
+</code></pre>
+            <div class="image-container">
+                <img src="/static/images/sample.jpg" alt="Sample Image">
+            </div>
+
+
+
+
+            <h1 class="text-center" id="keyfind">Home page html code</h1>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;title&gt;Institute of TechAdvance Institute&lt;/title&gt;
+  &lt;meta charset="utf-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+  &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+  &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+  &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" /&gt;
+  &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" /&gt;
+  &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+  &lt;link rel="shortcut icon" href="/static/images/2023.png" type="image/x-icon"&gt;
+  &lt;link rel="stylesheet" href="/static/css/mainpage.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;nav class="navbar navbar-expand-sm bg-dark navbar-dark"&gt;
+    &lt;div class="container-fluid"&gt;
+      &lt;a class="navbar-brand" href="/mainpage"&gt;
+        &lt;img src="/static/images/2023.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"&gt;
+      &lt;/a&gt;
+      &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"&gt;
+        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;div class="collapse navbar-collapse" id="collapsibleNavbar"&gt;
+        &lt;ul class="navbar-nav"&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active fw-bold" href="mainpage" style="font-size: 20px;"&gt;Home&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active fw-bold" href="about" style="font-size: 20px;"&gt;About&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item dropdown"&gt;
+            &lt;a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px;"&gt;
+              Details
+            &lt;/a&gt;
+            &lt;ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown"&gt;
+              {% for x in subjects %}
+              &lt;li&gt;&lt;a class="dropdown-item fw-bold text-white" href="/subject?sub={{ x.code }}"&gt;{{ x.sub_name }}&lt;/a&gt;&lt;/li&gt;
+              {% endfor %}
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active fw-bold" href="course" style="font-size: 20px;"&gt;Course&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active fw-bold" href="contact" style="font-size: 20px;"&gt;Contact&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item dropdown"&gt;
+            &lt;a class="nav-link dropdown-toggle active fw-bold" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px;"&gt;
+              Mock Test
+            &lt;/a&gt;
+            &lt;ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown"&gt;
+              {% for x in subjects %}
+              &lt;li&gt;&lt;a class="dropdown-item fw-bold text-white" href="/level?sub={{ x.code }}&amp;type=mock"&gt;{{ x.sub_name }}&lt;/a&gt;&lt;/li&gt;
+              {% endfor %}
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link active fw-bold" href="profile" style="font-size: 20px;"&gt;Profile&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="navbar-nav d-block d-sm-none"&gt;
+          &lt;li class="nav-item"&gt;
+            &lt;a class="nav-link btn btn-danger fw-bold" href="/signout"
+              style="color: aliceblue; text-decoration: none;"&gt;Logout&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;form class="d-flex d-none d-sm-block"&gt;
+        &lt;button class="btn btn-danger fw-bold" type="button"
+          style="width: 120px; margin-right: 0.5cm; cursor: pointer;"&gt;
+          &lt;a href="/signout" style="color: aliceblue; text-decoration: none; cursor: pointer;"&gt;Logout&lt;/a&gt;
+        &lt;/button&gt;
+      &lt;/form&gt;
+  &lt;/nav&gt;
+  &lt;div class="container-fluid fade-in" data-aos="fade-down"&gt;
+    &lt;div class="row" data-aos="fade-up"&gt;
+      &lt;h2 class="fw-bold text-white text-center mt-5 fs-1" data-aos="fade-up"&gt;Institute of &lt;span
+          class="fw-bold text-danger"&gt;TechAdvance information&lt;/span&gt;&lt;/h2&gt;
+      &lt;div class="col-lg-6 col-md-12" data-aos="fade-right"&gt;
+        &lt;p class="fw-bold mt-5 text-center text-white" data-aos="fade-up"&gt;
+          The Institute of TechAdvance information is serving the arena of information technology since 2007. The
+          institute has been engaged in providing quality education regarding computer basics, MS- OFFICE packages,
+          trouble shooting, programming languages (C, C++, JAVA, PYTHON), Digital circuit and logic design, mysql,
+          internet, full stack, android app, advance python, Data Analytics, networking, etc. as well as all
+          boards (ISC/CBSE/ICSE/WBBSE/WBCHSE). &lt;br&gt;&lt;br&gt;
+          The institute has been providing teaching on basic and corporate level spoken English course, the primary
+          aim
+          and objective of this institute is to educate the students in an intellectually enlightened way. The
+          institute
+          is trying to shed light on various aspects of computer science. It is an endeavor of this institute to
+          enrich
+          the student’s knowledge on hardware, software, and networking.
+        &lt;/p&gt;
+        &lt;div class="text-center"&gt;
+          &lt;a href="about"&gt; &lt;button type="button" class="btn btn-warning text-dark fw-bold"&gt;About Us&lt;/button&gt;&lt;/a&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-lg-6 col-md-12 mt-5" data-aos="fade-down"&gt;
+        &lt;img src="/static/images/study3.jpg" alt="Sample Image" class="img-fluid"
+          style="height: auto; max-height: 60vh; border-radius: 30px; display: block; margin-left: auto; margin-right: auto;"&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="image" data-aos="fade-down"&gt;
+    &lt;div class="images-rap mt-5"&gt;
+      &lt;h2 class="text-center text-danger fs-1 mt-5 fw-bold" data-aos="fade-left"&gt;Some Courses we offer&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class="course mt-4"&gt;
+      {% for x in course %}
+      &lt;div class="card rounded overflow-hidden animate__animated animate__fadeInUp" data-bs-toggle="modal" data-bs-target="#imageModal1" data-aos="fade-up"&gt;
+        &lt;img src="{{ x.location }}" alt="Course Image" class="w-100 h-100 object-fit-cover"&gt;
+        &lt;h1 class="course-title fw-bold text-dark fs-5 mt-3"&gt;{{ x.name }}&lt;/h1&gt;
+        &lt;a href="/course" class="text-decoration-none text-dark mt-2 mb-3 fw-bold"&gt;&lt;button class="btn btn-danger w-75 px-auto" id="buttoncourse"&gt;Know more to click here&lt;/button&gt;&lt;/a&gt;
+      &lt;/div&gt;
+      {% endfor %}
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+            </div>
+            <div class="image-container">
+                <img src="/static/images/sample.jpg" alt="Sample Image">
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <h1 class="text-center" id="keyfind">Examination page code</h1>
+            <pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+                    &lt;title&gt;Institute of TechAdvance Institute&lt;/title&gt;
+                    &lt;!-- Google Font --&gt;
+                    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+                    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+                    &lt;link href="https://fonts.googleapis.com/css2?family=Bungee&amp;display=swap" rel="stylesheet"&gt;
+                    &lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet" /&gt;
+                    &lt;!-- Stylesheet --&gt;
+                    &lt;link rel="shortcut icon" href="/static/images/2023.png" type="image/x-icon"&gt;
+                    &lt;link rel="stylesheet" href="/static/css/python_mcq.css"&gt;
+                    &lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+                    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;div class="backwrap gradient"&gt;
+                        &lt;div class="back-shapes"&gt;
+                
+                       &lt;div class="start-screen"&gt;
+                                &lt;h1&gt;Are You Sure you will do this exam ??&lt;/h1&gt;
+                                &lt;button id="start-button"&gt;Start&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;!-- &lt;div class="alert alert-secondary alert-dismissible w-75 mx-auto mt-5"&gt;
+                                &lt;button type="button" class="btn-close" data-bs-dismiss="alert"&gt;&lt;/button&gt;
+                                &lt;strong&gt;Secondary!&lt;/strong&gt; Indicates a slightly less important action.
+                            &lt;/div&gt; --&gt;
+                            &lt;div id="display-container"&gt;
+                                &lt;!-- camera --&gt;
+                                &lt;img src="{% url 'video_feed' %}" alt="Video Feed" style="z-index: 10;width: 10%;margin-left: 40%;"&gt;
+                                &lt;!-- end --&gt;
+                                &lt;div class="header"&gt;
+                                    &lt;div class="number-of-count"&gt;
+                                        &lt;span class="number-of-question fw-bold mt-5"&gt;1 of 3 questions&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="timer-div"&gt;
+                                        &lt;img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                                            width="20px" /&gt;
+                                        &lt;span class="time-left"&gt;10s&lt;/span&gt;
+                
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                                &lt;div id="container"&gt;
+                                &lt;/div&gt;
+                                &lt;button id="next-button" class="hover-effect" style="border: none;"&gt;Next&lt;/button&gt;
+                            &lt;/div&gt;
+                            &lt;div class="score-container hide"&gt;
+                                &lt;div id="user-score"&gt;Your Score&lt;/div&gt;
+                                &lt;button id="restart"&gt;Back to Main page&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;script&gt;
+                        var restartButton = document.getElementById('restart');
+                        restartButton.addEventListener('click', function () {
+                            window.location.href = 'mainpage';
+                        });
+                    &lt;/script&gt;
+                    &lt;script&gt;
+                        const quizArray = [
+                            {% for x in question %}
+                            {
+                                id: "{{ x.id }}",
+                                question: "{{ x.question }}",
+                                options: [
+                                    "{{ x.option1 }}",
+                                    "{{ x.option2 }}",
+                                    "{{ x.option3 }}",
+                                    "{{ x.option4 }}"
+                                ],
+                                correct: "{{ x.answer |safe }}"
+                            },
+                            {% endfor %}
+                        ];
+                    &lt;/script&gt;
+                    &lt;script&gt;
+                        // Function to download data as a CSV file
+                        function downloadCSV(data, filename) {
+                            let csvData = new Blob([data], { type: 'text/csv' });
+                            let csvUrl = URL.createObjectURL(csvData);
+                            let downloadLink = document.createElement("a");
+                            downloadLink.href = csvUrl;
+                            downloadLink.download = filename;
+                            document.body.appendChild(downloadLink);
+                            downloadLink.click();
+                            document.body.removeChild(downloadLink);
+                        }
+                        // Function to convert data to CSV format
+                        function convertToCSV(objArray) {
+                            const array = typeof objArray !== 'object' ? JSON.parse(objArray) : objArray;
+                            let str = 'Total Marks,Scored Marks,Time Remaining\n';
+                
+                            // Loop over the array of objects and append data as comma-separated values
+                            for (let i = 0; i &lt; array.length; i++) {
+                                let line = '';
+                                for (let index in array[i]) {
+                                    if (line !== '') line += ',';
+                                    line += array[i][index];
+                                }
+                                str += line + '\r\n';
+                            }
+                            return str;
+                        }
+                        // Example function to handle the end of the exam
+                        function onExamComplete(totalMarks, scoredMarks, timeRemaining) {
+                            // Prepare the data to be written in CSV format
+                            let resultData = [
+                                { "Total Marks": totalMarks, "Scored Marks": scoredMarks, "Time Remaining": timeRemaining }
+                            ];
+                
+                            // Convert data to CSV
+                            let csvString = convertToCSV(resultData);
+                
+                            // Download the CSV file
+                            downloadCSV(csvString, "exam-results.csv");
+                        }
+                
+                        // Call this function when the exam is complete
+                        // onExamComplete(100, 85, '30s');  // Uncomment and modify with actual data
+                
+                    &lt;/script&gt;
+                    &lt;script src="/static/js/mcq.js"&gt;&lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+            <div class="image-container">
+                <img src="/static/images/sample.jpg" alt="Sample Image">
+            </div>
+
+
+            <h1 class="text-center" id="keyfind">Python code for detection</h1>
+            <pre><code>def markAttendance(self, name, head_movement_angle, left_eye_state, right_eye_state, head_position, cheating_incident=None):
+                    now = datetime.datetime.now()
+                    date = now.date()
+                    time_str = now.time()
+                    sound_detection_result = self.background_sound_detection()
+                    background_noise_level = self.background_noise_detection()
+                    
+                    if cheating_incident == "Yes":
+                        img_data = self.cap.read()
+                        ret, img_data_jpeg = cv2.imencode('.jpg', img_data)
+                        img_data_bytes = img_data_jpeg.tobytes()
+                        
+                        record = AttendanceRecord.objects.create(
+                            name=name,
+                            head_movement=head_movement_angle,
+                            left_eye=left_eye_state,
+                            right_eye=right_eye_state,
+                            head_position=head_position,
+                            date=date,
+                            time=time_str,
+                            cheating_incident=cheating_incident,
+                            sound_detection=sound_detection_result,
+                            background_noise_level=background_noise_level,
+                        )
+                        
+                        image_filename = f'{name}_{date}_{time_str}.jpg'
+                        content = ContentFile(img_data_bytes)
+                        record.image_path.save(image_filename, content, save=True)
+                    else:
+                        record = AttendanceRecord.objects.create(
+                            name=name,
+                            head_movement=head_movement_angle,
+                            left_eye=left_eye_state,
+                            right_eye=right_eye_state,
+                            head_position=head_position,
+                            date=date,
+                            time=time_str,
+                            cheating_incident=cheating_incident,
+                            sound_detection=sound_detection_result,
+                            background_noise_level=background_noise_level,
+                        )
+                </code></pre>
+
+            <h4 class="text-center mt-4" id="keyfind">Analysis and interpretation of results</h4>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-1 g-1">
+                    <div class="col">
+                        <div class="card border-0 shadow-sm" id="csvimage">
+                            <img src="csv1.png" class="card-img-top border" alt="System Models and Libraries Diagram">
+                        </div>
+                    </div>
+                    <a href="./Main.csv" class="text-decoration-none fw-bold" download> <button
+                            class="btn btn-warning text-center mt-5 text-dark" download>Click here to download
+                            CSV</button></a>
+                </div>
+            </div>
+        </section>
+        <!-- end here -->
+
+
+
+
+
+        <!-- reference -->
+        <section id="overview" class="mb-5">
+            <h2 id="titletext">References</h2>
+            <ol style="list-style-type: disc;line-height: 5vh;" id="listrefrence">
+                <li>Martinez, Recognizing imprecisely localized, partially included, and expression variant faces from a
+                    single sample per class, PAMI, IEEE Transactions on 24 (2002), no. 6, 748–763.</li>
+                <li>P.J. Phillips, Hyeonjoon Moon, S.A. Rizvi, and P.J. Rauss, The feret evaluation methodology for
+                    face-recognition algorithms, IEEE Transactions on Pattern Analysis and Machine Intelligence 22
+                    (2000),
+                    no. 10, 1090–1104.</li>
+                <li>Xiaoyun Deng, Chip-Hong Chang, Erwin ―A New Method for Eye Extraction from Facial Image―, IEEE
+                    International Workshop on Electronic Design, Test and Applications 2004.</li>
+                <li>Wen-Tao Wang, Chao Xu, Hong-Wei Shen, ―EYE LOCALIZATION BASED ON HUE IMAGE PROCESSING‖, IEEE
+                    International Symposium on Intelligent Signal Processing and Communication Systems, Nov.28-Dec.1,
+                    2007.
+                </li>
+                <li>Xiao Yun Deng, Chip-Hong Chang, Erwin Brandle, ―A new method for eye extraction from facial image‖,
+                    IEEE
+                    International Workshop on Electronic Design, Test and Applications, pp. 29- 34, Jan 2004.</li>
+                <li>A. Da Veiga, L. V. Astakhova, A. Botha, and M. Herselman, “Defining organizational information
+                    security
+                    culture—Perspectives from academia and industry,” Computers Security, vol. 92, p. 101713, 2020. <br>
+                    <a href="https://doi.org/10.1016/j.cose.2020.101713">https://doi.org/10.1016/j.cose.2020.101713</a>
+                </li>
+                <li>H. Tauma, and H. Alrikabi, “Enhanced data security of communication system using combined encryption
+                    and
+                    steganography,” International Journal of Interactive Mobile Technologies, vol. 15, no. 16, pp.
+                    144–157,
+                    2021. <br> <a
+                        href="https://doi.org/10.3991/ijim.v15i16.24557">https://doi.org/10.3991/ijim.v15i16.24557</a>
+                </li>
+                <li>T. Ko, “A survey on behaviour analysis in video surveillance applications,” in Video Surveillance:
+                    InTech, 2011, pp. 279–294.<br><a
+                        href="https://doi.org/10.5772/15302">https://doi.org/10.5772/15302</a>
+                </li>
+                <li>H. T. Salim, and I. A. Aljazaery, “Encryption of color image based on DNA strand and exponential
+                    factor,” International Journal of Online and Biomedical Engineering (iJOE), vol. 18, no. 3, pp.
+                    101–113,
+                    2022.<br> <a
+                        href="https://doi.org/10.3991/ijoe.v18i03.28021">https://doi.org/10.3991/ijoe.v18i03.28021</a>
+                </li>
+                <li>S.-C. Huang, “An advanced motion detection algorithm with video quality analysis for video
+                    surveillance
+                    systems,” IEEE Transactions on Circuits Systems for Video Technology, vol. 21, no. 1, pp. 1–14,
+                    2010.<br> <a
+                        href="https://doi.org/10.1109/TCSVT.2010.2087812">https://doi.org/10.1109/TCSVT.2010.2087812</a>
+                </li>
+                <li>H. ALRikabi, and N. Alseelawi, “A novel method of multimodal medical image fusion based on hybrid
+                    approach of NSCT and DTCWT,” International Journal of Online and Biomedical Engineering, vol. 18,
+                    no. 3,
+                    pp. 114–133, 2022.<br> <a
+                        href="https://doi.org/10.3991/ijoe.v18i03">https://doi.org/10.3991/ijoe.v18i03</a>
+                </li>
+                <li>Klein, M. (2020, June 13). CUNY professors uncover ‘scandalous’ level of cheating in final exams.
+                    New
+                    York Post. <br><a
+                        href="https://nypost.com/2020/06/13/cuny-professors-uncoverscandalous-level-of-cheating-in-final-exams/">https://nypost.com/2020/06/13/cuny-professors-uncoverscandalous-level-of-cheating-in-final-exams/</a>
+                </li>
+                <li>Kolowich, S. (2013, April 15). Behind the webcam's watchful eye, online proctoring takes hold.
+                    Chronicle
+                    of Higher Education.<br> <a
+                        href="https://www.chronicle.com/article/Behind-the-WebcamsWatchful/138505">https://www.chronicle.com/article/Behind-the-WebcamsWatchful/138505</a>
+                </li>
+                <li>Lingel, J., & Sinnreich, A. (2016). Incoded counter-conduct: What the incarcerated can teach us
+                    about
+                    resisting mass surveillance. First Monday, 21(5).<br> <a
+                        href="https://doi.org/10.5210/fm.v21i5.6172">https://doi.org/10.5210/fm.v21i5.6172</a></li>
+                <li>Lipson, S. M., & Karthikeyan, L. (2016). The art of cheating in the 21st Millennium: Innovative
+                    mechanisms and insidious ploys in academic deceit. International Journal of Education, 8(2), 48-72.
+                    <br> <a href="https://doi.org/10.5296/ije.v8i2.9117">https://doi.org/10.5296/ije.v8i2.9117</a>
+                </li>
+                <li>Liyanagunawardena, T. R., Adams, A. A., & Williams, S. A. (2013). MOOCs: A systematic study of the
+                    published literature 2008-2012. The International Review of Research in Open and Distributed
+                    Learning,
+                    14(3), 202-227. <br><a
+                        href="https://doi.org/10.19173/irrodl.v14i3.1455">https://doi.org/10.19173/irrodl.v14i3.1455</a>
+                </li>
+                <li>Madden, M., Gilman, M., Levy, K., & Marwick, A. (2017). Privacy, poverty, and big data: A matrix of
+                    vulnerabilities for poor Americans. Washington University Law Review, 95, 53-125.</li>
+                <li>Majeed, A., Baadel, S., & Haq, A. U. (2017, January). Global triumph or exploitation of security and
+                    privacy concerns in e-learning systems. In International conference on global security, safety, and
+                    sustainability (pp. 351-363). Springer.<br> <a
+                        href="https://doi.org/10.1007/978-3-319-51064-4_28">https://doi.org/10.1007/978-3-319-51064-4_28</a>
+                </li>
+                <li>Malesky Jr., L. A., Baley, J., & Crow, R. (2016). Academic dishonesty: Assessing the threat of
+                    cheating
+                    companies to online education. College Teaching, 64(4), 178-183.</li>
+
+
+            </ol>
+
+        </section>
+        <!-- end reference -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- add deatures -->
+        <section id="overview" class="mb-5">
+            <h2 class="mb-4">Features</h2>
+            <ul>
+                <li>Face Detection and Recognition: The system employs facial recognition technology to verify the
+                    identity of examinees and ensure that the person taking the exam is the authorized individual.</li>
+                <li>Behavior Analysis: Our system continuously monitors head movements, eye movements, and other
+                    behavioral patterns to detect signs of cheating, such as looking away from the screen or engaging in
+                    suspicious activities.</li>
+                <li>Cheating Incident Detection: The system is equipped to detect specific cheating behaviors, such as
+                    talking or moving one's mouth excessively, indicating the possibility of receiving external
+                    assistance.</li>
+                <li>Multiple Person Detection: Our solution can identify and track multiple individuals in the video
+                    frame, ensuring that only the authorized examinee is present during the test.</li>
+                <li>Suspicious Object Detection: The system can recognize and flag suspicious objects in the examinee’s
+                    environment that could potentially aid in cheating.</li>
+                <li>Real-Time Alerts: When a potential cheating incident is detected, the system generates real-time
+                    alerts to notify proctors or automated systems for immediate intervention.</li>
+                <li>Comprehensive Reporting: Detailed logs and reports are generated for each exam session, documenting
+                    all detected incidents and providing valuable data for further review and analysis.</li>
+            </ul>
+        </section>
+
+
+        <section id="overview" class="mb-5">
+            <h2 class="mb-4">Installation</h2>
+            <p>Follow these steps to install the necessary dependencies and run the project.</p>
+            <div style="position: relative;">
+                <pre id="codeinstall"><code id="installation-code">
+        # Step 1: Clone the repository
+        git clone https://github.com/your-repo/project.git
+        
+        # Step 2: Navigate to the project directory
+        cd project
+        
+        # Step 3: Create a virtual environment
+        python -m venv venv
+        
+        # Step 4: Activate the virtual environment
+        # On Windows
+        venv\Scripts\activate
+        # On macOS/Linux
+        source venv/bin/activate
+        
+        # Step 5: Install dependencies
+        pip install django numpy face_recognition SpeechRecognition pandas matplotlib pyaudio opencv-python mysqlclient
+        
+        # Step 6: Run database migrations
+        python manage.py migrate
+        
+        # Step 7: Start the development server
+        python manage.py runserver
+                </code></pre>
+                <button class="copy-btn" onclick="copyCode()">Copy Code</button>
+            </div>
+        </section>
+
+        <script>
+            function copyCode() {
+                const code = document.getElementById('installation-code').innerText;
+                navigator.clipboard.writeText(code).then(() => {
+                    alert('Code copied to clipboard');
+                });
+            }
+        </script>
+
+
+        <section id="overview" class="mb-5">
+            <h2 class="mb-4">Usage</h2>
+            <p>To use the Cheating Detection System, follow these instructions:</p>
+            <p>1. <strong>Start the Server:</strong> Once the installation is complete and the server is running, access
+                the system via your web browser.</p>
+            <p>2. <strong>Login:</strong> Use your credentials to log into the system. New users can register for an
+                account if needed.</p>
+            <p>3. <strong>Set Up an Exam:</strong> Navigate to the exam setup section, where you can configure exam
+                parameters, including duration, allowed resources, and the list of examinees.</p>
+            <p>4. <strong>Monitor Exams:</strong> During the exam, the system will continuously monitor the video feed
+                for any signs of cheating. Real-time alerts will be generated if suspicious behavior is detected.</p>
+            <p>5. <strong>Review Reports:</strong> After the exam, detailed reports are available for review. These
+                reports include logs of any detected incidents and video clips highlighting the suspicious behavior.</p>
+            <p>6. <strong>Manage Users:</strong> Administrators can manage user accounts, including adding new users,
+                updating information, and assigning roles.</p>
+        </section>
+
+        <section id="overview" class="mb-5">
+            <h2 class="mb-4">Screenshots</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="screenshot1.jpg" class="img-fluid" alt="Screenshot 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="screenshot2.jpg" class="img-fluid" alt="Screenshot 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="screenshot3.jpg" class="img-fluid" alt="Screenshot 3">
+                </div>
+                <div class="col-md-4">
+                    <img src="screenshot4.jpg" class="img-fluid" alt="Screenshot 4">
+                </div>
+                <div class="col-md-4">
+                    <img src="screenshot5.jpg" class="img-fluid" alt="Screenshot 5">
+                </div>
+                <div class="col-md-4">
+                    <img src="screenshot6.jpg" class="img-fluid" alt="Screenshot 6">
+                </div>
+            </div>
+        </section>
+
+        <section id="overview" class="mb-5">
+            <h2 class="mb-4">FAQ</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Question 1: What is this project about?
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Answer: This project is a comprehensive solution for...
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Question 2: How do I install this project?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Answer: Follow the installation steps mentioned above.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Question 3: Where can I find the source code?
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Answer: The source code is available on GitHub at https://github.com/your-repo/project.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
