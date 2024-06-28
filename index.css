@@ -475,7 +475,7 @@ h3 {
 .about p {
     font-family: "Arvo", serif;
     font-size: 1.2rem;
-    color: #fc2c03 !important;
+    color: red !important;
     text-align: justify;
 }
 
