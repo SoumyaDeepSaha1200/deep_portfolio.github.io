@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+
+
+
+
+/* chattbot */
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#chatbot-icon {
+    cursor: pointer;
+    color: #f71000;
+    font-size: 3rem;
+}
+
+.chatterbot {
+    z-index: 1000 !important;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.chat-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-title {
+    font-weight: bold;
+}
+
+.chat-messages {
+    height: calc(100% - 130px);
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+#message-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#send-message {
+    padding: 8px 20px;
+    background-color: #010101;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chatbot {
+    width: 90%;
+    background-color: #000 !important;
+    color: #4cff15 !important;
+    font-weight: bold;
+}
+
+#chatbot:hover {
+    background-color: #030187 !important;
+    color: #fff315 !important;
+}
+
+/* Media query to hide chat application on smaller screens */
+@media screen and (max-width: 1000px) {
+    .chatbot-container {
+        display: none;
+    }
+}
+
+/* chatbott end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General navbar styles */
+.nav {
+    border-bottom: 1px solid white;
+    background-color: #000000;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+    margin-left: 20px;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.nav-items a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fefefe !important;
+    margin-left: 1rem;
+    transition: all 0.3s;
+}
+
+.nav-items a:hover {
+    color: #40e903 !important;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 39px;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    transition: all 0.3s;
+    font-family: "Seymour One", sans-serif;
+    font-size: 1rem;
+    color: #000000 !important;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.sidebar ul li:hover {
+    color: #7b00ff !important;
+}
+
+#blogsModalLabel {
+    font-family: "Seymour One", sans-serif;
+}
+
+#buttonblogss {
+    background-color: #000 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+#buttonblogss:hover {
+    background-color: #2ee400 !important;
+    color: #000000 !important;
+}
+
+@media (max-width: 1000px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #000;
+        z-index: 999;
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* banner css */
+.banner {
+    background: rgb(0, 255, 72);
+    background: linear-gradient(130deg, rgb(0, 0, 0) 50%, rgb(10, 107, 252) 50%);
+    padding: 20px;
+    text-align: center;
+}
+
+.banrap h1 {
+    text-shadow: 0 2px 10px rgb(0, 0, 0);
+    color: #41ff07ef !important;
+    font-size: 3rem;
+    font-family: "Seymour One", sans-serif;
+}
+
+.banrap h3 {
+    text-shadow: 0 2px 5px rgb(0, 0, 0);
+    color: #fff709ef !important;
+    font-size: 3rem;
+    font-family: "Dancing Script", cursive;
+}
+
+.banrap p {
+    text-shadow: 0 2px 1px rgb(0, 0, 0);
+    color: #ffffffef !important;
+    font-family: "Arvo", serif;
+    font-size: 1.3rem;
+}
+
+.banrap h1,
+h3 {
+    margin: 10px 0;
+}
+
+.icons {
+    margin: 20px 0;
+}
+
+.icons i {
+    cursor: pointer;
+    font-size: 2.8rem;
+    margin: 0 10px;
+}
+
+
+.bxl-github {
+    color: #ffffff;
+}
+
+.bxl-linkedin-square {
+    color: #10abff;
+}
+
+.bxl-facebook-circle {
+    color: #0050fd;
+}
+
+.bxl-instagram-alt {
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.bxl-google {
+    color: #ee3e2e;
+}
+
+.bxl-whatsapp {
+    color: #08f15e;
+}
+
+@media (max-width: 768px) {
+    .banrap {
+        padding: 0 10px;
+    }
+
+    .icons i {
+        margin: 0 5px;
+    }
+    #bannerbut{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .banrap h1 {
+        font-size: 1.9rem !important;
+    }
+
+    .banrap h3 {
+        font-size: 1.3rem !important;
+    }
+
+    .banrap p {
+        font-size: 1rem !important;
+    }
+
+    .icons i {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banrap h1 {
+        font-size: 2.5rem;
+    }
+
+    .banrap h3 {
+        font-size: 2.5rem;
+    }
+
+    .banrap p {
+        font-size: 1.2rem;
+    }
+
+}
+
+#feedbackbutton {
+    background-color: #000 !important;
+    font-weight: bold;
+    color: white !important;
+}
+
+#feedbackbutton:hover {
+    background-color: #2ee400 !important;
+    color: #000000 !important;
+}
+
+#bannerbut {
+    border: none !important;
+    background-color: #f240f5 !important;
+    color: #ffffff !important;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#bannerbut:hover {
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    background-color: #000000 !important;
+    color: #f1f1f1 !important;
+}
+
+
+/* end here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* about css */
+.about {
+    border-top: 2px solid rgb(243, 239, 12) !important;
+    border-bottom: 2px solid rgb(243, 239, 12) !important;
+    background: rgb(0, 255, 72);
+    background: linear-gradient(-150deg, rgb(0, 0, 0) 60%, rgba(245, 245, 245, 1) 60%);
+    padding: 50px 0;
+}
+
+.about h3 {
+    text-align: center;
+    color: white;
+    font-family: "Seymour One", sans-serif;
+    font-size: 3.5rem;
+
+}
+
+.abouttext {
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 20px 30px;
+    border: 1px solid rgb(238, 242, 12);
+}
+
+.aboutimg img {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.about h2 {
+    font-family: "Dancing Script", cursive;
+    color: #6228d7;
+    font-size: 3.1rem !important;
+    text-align: center !important;
+}
+
+.about p {
+    font-family: "Arvo", serif;
+    font-size: 1.2rem;
+    color: #e10909 !important;
+    text-shadow: 0 0 3px black;
+    text-align: justify;
+}
+
+#aboutbtn {
+    border: none;
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    background-color: #4500f3 !important;
+    color: #ffffff !important;
+
+}
+
+#aboutbtn:hover {
+    background-color: #fdfdfd !important;
+    color: #000000 !important;
+}
+
+@media (max-width: 768px) {
+    .abouttext {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about h3 {
+        font-size: 2rem;
+    }
+
+    .about h2 {
+        font-size: 2rem !important;
+    }
+
+    .about p {
+        font-size: 0.8rem;
+    }
+
+    #aboutbtn {
+        font-size: 0.8rem;
+    }
+}
+
+/* end here */
+
+
+
+
+
+
+
+/* photography */
+#photography h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: "Seymour One", sans-serif;
+    font-size: 3.5rem;
+}
+
+@media (max-width: 500px) {
+    #photography h1{
+        font-size: 2.5rem;
+    }
+}
+/* end here */
+
+
+
+
+
+
+
+
+
+/* contact page */
+#contactbutton {
+    border: none;
+    background-color: #000 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+#contact {
+    font-family: "Seymour One", sans-serif;
+    font-size: 3.5rem;
+    color: #0050fd !important;
+}
+
+@media (max-width: 500px) {
+    #contact {
+        font-size: 1.3rem;
+    }
+}
+
+/* contact part */
