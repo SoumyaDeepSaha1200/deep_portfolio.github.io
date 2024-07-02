@@ -7,88 +7,20 @@
 
 
 
-/* General navbar styles */
-.nav {
-    border-bottom: 1px solid white;
-    background-color: #000000;
-    color: #fff;
-}
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
 
-.logo img {
-    height: 40px;
-    margin-left: 20px;
-}
 
-.nav-items {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.nav-items li {
-    margin: 0 10px;
-    cursor: pointer;
-}
 
-.nav-items a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #fefefe !important;
-    margin-left: 1rem;
-    transition: all 0.3s;
-}
 
-.nav-items a:hover {
-    color: #40e903 !important;
-}
 
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-}
 
-.menu-toggle i {
-    font-size: 39px;
-    color: white;
-}
 
-.sidebar {
-    position: fixed;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #ffffff !important;
-    color: #000000 !important;
-    transition: all 0.3s;
-    z-index: 1000;
-}
 
-.sidebar ul {
-    list-style: none;
-    padding: 20px;
-}
 
-.sidebar ul li {
-    transition: all 0.3s;
-    font-family: "Seymour One", sans-serif;
-    font-size: 1rem;
-    color: #000000 !important;
-    padding: 10px 0;
-    cursor: pointer;
-}
 
-.sidebar ul li:hover {
-    color: #7b00ff !important;
-}
+
+
 
 #chatbot {
     width: 90%;
