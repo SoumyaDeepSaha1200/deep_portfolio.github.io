@@ -9,9 +9,11 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
+
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 5px;
@@ -36,7 +38,7 @@
 
 #chatbot-icon {
     cursor: pointer;
-    color: #f71000;
+    color: #000000;
     font-size: 3rem;
 }
 
@@ -272,29 +274,28 @@
 /* banner css */
 .banner {
     background: rgb(0, 255, 72);
-    background: linear-gradient(130deg, rgb(0, 0, 0) 50%, rgba(245, 245, 245, 1) 50%);
+    background: linear-gradient(130deg, #009245 25%, #FCEE21 75%);
     padding: 20px;
     text-align: center;
 }
 
 .banrap h1 {
     text-shadow: 0 2px 10px rgb(0, 0, 0);
-    color: #fff707ef !important;
-
+    color: #07eaffef !important;
     font-size: 4rem;
     font-family: "Seymour One", sans-serif;
 }
 
 .banrap h3 {
     text-shadow: 0 2px 5px rgb(0, 0, 0);
-    color: #fff709ef !important;
+    color: #e86cfbef !important;
     font-size: 3rem;
     font-family: "Dancing Script", cursive;
 }
 
 .banrap p {
     text-shadow: 0 2px 1px rgb(0, 0, 0);
-    color: #fb4a0aef !important;
+    color: #000000ef !important;
     font-family: "Arvo", serif;
     font-size: 1.3rem;
 }
@@ -316,15 +317,15 @@ h3 {
 
 
 .bxl-github {
-    color: #ffffff;
+    color: #000000;
 }
 
 .bxl-linkedin-square {
-    color: #10abff;
+    color: #000000;
 }
 
 .bxl-facebook-circle {
-    color: #0050fd;
+    color: #000000;
 }
 
 .bxl-instagram-alt {
@@ -334,11 +335,11 @@ h3 {
 }
 
 .bxl-google {
-    color: #ee3e2e;
+    color: #000000;
 }
 
 .bxl-whatsapp {
-    color: #08f15e;
+    color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -349,7 +350,8 @@ h3 {
     .icons i {
         margin: 0 5px;
     }
-    #bannerbut{
+
+    #bannerbut {
         font-size: 1rem;
     }
 }
@@ -388,7 +390,7 @@ h3 {
 }
 
 #feedbackbutton {
-    background-color: #000 !important;
+    background-color: #ffd70d !important;
     font-weight: bold;
     color: white !important;
 }
@@ -400,8 +402,8 @@ h3 {
 
 #bannerbut {
     border: none !important;
-    background-color: #272626 !important;
-    color: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
@@ -410,7 +412,6 @@ h3 {
 }
 
 #bannerbut:hover {
-    box-shadow: 0 0 20px rgb(0, 0, 0);
     background-color: #000000 !important;
     color: #f1f1f1 !important;
 }
@@ -436,16 +437,17 @@ h3 {
 
 /* about css */
 .about {
-    border-top: 2px solid rgb(243, 239, 12) !important;
-    border-bottom: 2px solid rgb(243, 239, 12) !important;
+    border-top: linear-gradient(130deg, #000000 25%, #d7640b 75%) !important;
+    border-bottom: 2px solid rgb(255, 255, 255) !important;
     background: rgb(0, 255, 72);
-    background: linear-gradient(-150deg, rgb(0, 0, 0) 60%, rgba(245, 245, 245, 1) 60%);
+    background: linear-gradient(130deg, #009245 25%, #FCEE21 75%);
     padding: 50px 0;
 }
 
 .about h3 {
+    text-shadow: 0 2px 10px rgb(0, 0, 0);
     text-align: center;
-    color: white;
+    color: rgb(250, 247, 16);
     font-family: "Seymour One", sans-serif;
     font-size: 3.5rem;
 
@@ -455,7 +457,7 @@ h3 {
     cursor: pointer;
     border-radius: 25px;
     padding: 20px 30px;
-    border: 1px solid rgb(238, 242, 12);
+    border: 1px solid rgb(17, 17, 17);
 }
 
 .aboutimg img {
@@ -467,7 +469,7 @@ h3 {
 
 .about h2 {
     font-family: "Dancing Script", cursive;
-    color: #6228d7;
+    color: #000000;
     font-size: 3.1rem !important;
     text-align: center !important;
 }
@@ -475,8 +477,7 @@ h3 {
 .about p {
     font-family: "Arvo", serif;
     font-size: 1.2rem;
-    color: #e10909 !important;
-    text-shadow: 0 0 3px black;
+    color: #000000 !important;
     text-align: justify;
 }
 
@@ -487,14 +488,14 @@ h3 {
     margin-left: auto;
     margin-right: auto;
     font-size: 1.2rem;
-    background-color: #4500f3 !important;
-    color: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
 
 }
 
 #aboutbtn:hover {
-    background-color: #fdfdfd !important;
-    color: #000000 !important;
+    background-color: #000000 !important;
+    color: #ffffff !important;
 }
 
 @media (max-width: 768px) {
@@ -809,6 +810,9 @@ h3 {
 }
 
 #buttonproject {
+    color: white;
+    border: none;
+    background-color: #000;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -867,11 +871,17 @@ h3 {
 
 
 /* achivement */
+.container-fluid{
+    width: 90% !important;
+    margin: auto;
+}
 #achivment {
     font-family: "Seymour One", sans-serif;
     font-size: 3.5rem;
 }
-
+.card-body h5{
+    font-size: 1.2em;
+}
 .card img {
     height: 25vh;
 }
